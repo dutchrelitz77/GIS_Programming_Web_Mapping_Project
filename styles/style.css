@@ -81,26 +81,26 @@ select {
 
 /* Custom Styling for the navbar */
 
-.navbar.navbar-default {
+./*navbar.navbar-default {
 	background-color: #011948;
-}
+}*/
 
 .container-fluid.byu {
     background-color: #011948;
 }
 
-.navbar-default .navbar-text {
+/*.navbar-default .navbar-text {
     color: white;
 }
 
 .navbar-default .navbar-nav>li>a {
     color: white;
-}
+}*/
 
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+/*.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
     color: greenyellow;
-}
-
+}*/
+/*
 .dropdown-menu>li>a {
     color: white;
-}
+}*/
