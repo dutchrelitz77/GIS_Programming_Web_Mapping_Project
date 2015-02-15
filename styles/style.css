@@ -16,18 +16,8 @@ footer {
   	background-color: #e8e8e8;
 }
 
-.footer .container {
-	vertical-align: middle;
-}
-
-.footer .container .text-muted {
-	margin-top: 10px;
-	color: black;
-	min-height: 50px;	
-}
-
-.footer p {
-	color: black;
+.text-muted {
+	padding-top: 15px;
 }
 
 /* Styling for the header */
