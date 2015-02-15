@@ -78,6 +78,14 @@ h1, h2, h3 {
 	color: white;
 }
 
+.nav>li>a:hover {
+	background-color: #eee;
+}
+
+.navbar-nav>li>a:hover {
+	color: #ff7a00;
+}
+
 /*.navbar-default .navbar-text {
     color: white;
 }
