@@ -37,10 +37,10 @@
    </div>
    <div class="collapse navbar-collapse" id="example-navbar-collapse">
       <ul class="nav navbar-nav">
-		<li class='active'><a href="index.html">Home</a></li>
-		<li><a href="about.html">About</a></li>
-		<li><a href="documents.html">Documents</a></li>
-		<li><a href="contact.html">Contact</a></li>
+		<li class='active'><a href="index.php">Home</a></li>
+		<li><a href="about.php">About</a></li>
+		<li><a href="documents.php">Documents</a></li>
+		<li><a href="contact.php">Contact</a></li>
       </ul>
    </div>
 </nav>
@@ -73,12 +73,8 @@
 	</div>
 </div>
 
-<!-- Footer -->
-<footer>
-	<div class="container footer">
-		<p class='text-muted'>&copy; Justin and Samantha - This site was created as a part of the CE En 594R - GIS Programming course at BYU</p>
-	</div>
-</footer>
+<!-- Include the Footer -->
+<?php include('include/footer.php'); ?>
 
 <!-- Include the openlayers package and OpenLayers scripts we wrote -->
 <script src="http://openlayers.org/en/v3.0.0/build/ol.js" type="text/javascript"></script>
