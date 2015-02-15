@@ -73,12 +73,9 @@ h1, h2, h3 {
 
 /* Custom Styling for the navbar */
 
-./*navbar.navbar-default {
-	background-color: #011948;
-}*/
-
-.container-fluid.byu {
-    background-color: #011948;
+.navbar.navbar-default {
+	background-color: #1f6b75;
+	color: white;
 }
 
 /*.navbar-default .navbar-text {
