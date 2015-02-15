@@ -73,7 +73,7 @@ h1, h2, h3 {
 
 /* Custom Styling for the navbar */
 
-.navbar-default {
+/*.navbar-default {
   background-color: #4a48e5;
   border-color: #7bef39;
 }
@@ -145,7 +145,8 @@ h1, h2, h3 {
     color: #ff6036;
     background-color: #7bef39;
   }
-}
+}*/
+
 /*.navbar.navbar-default {
 	background-color: #1f6b75;
 	color: white;
