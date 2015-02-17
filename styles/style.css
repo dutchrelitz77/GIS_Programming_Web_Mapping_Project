@@ -42,17 +42,17 @@ h1, h2, h3 {
 
 /* Styling for the main containers */
 
-.span2 {
+.col-lg-2 {
 	background-color: #d0d0d0; 
 	padding-top: 20px;
 }
 
-.span10 {
+.col-lg-10 {
 	background-color: white;
   padding: 0px;
 }
 
-.container-fluid.main, .container-fluid.main2 {
+.container.main, .container.main2 {
 	min-height: 500px;
 	background-color: white;
 }

@@ -55,13 +55,13 @@
 
 
 <!-- Main Content Area -->
-<div class="container-fluid main2">
+<div class="container main2">
 	<div class='row'>
-		<div class="span2">
+		<div class="col-lg-2">
 			<p>Instructions will be written here</p>
 			<p>Maybe we can list the layers here for each KML</p>
 		</div>
-		<div class="span10">
+		<div class="col-lg-10">
 			<div id="map"></div>
 		</div>
 	</div>
@@ -84,7 +84,7 @@
 <!-- Script to use eqheight javascript to make columns same heights -->
 <script type="text/javascript">
 $(document).ready(function() {
-	$(".row").eqHeight(".span2, .span10");
+	$(".row").eqHeight(".col-lg-2, .col-lg-10");
 });
 </script>
 
