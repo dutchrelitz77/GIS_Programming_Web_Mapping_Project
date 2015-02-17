@@ -58,6 +58,7 @@ h1, h2, h3 {
 
 .col-lg-10 {
 	background-color: white;
+  padding: 0px;
 }
 
 .container-fluid.main, .container-fluid.main2 {
