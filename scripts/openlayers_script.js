@@ -52,22 +52,22 @@ function onFeatureSelect(event) {
   // Javascript.
   var content = "<h2>"+feature.attributes.name + "</h2>" + feature.attributes.description;
   if (content.search("<script") != -1) {
-      content = "Content contained Javascript! Escaped content below.<br>" + content.replace(/</g, "&lt;");
+    content = "Content contained Javascript! Escaped content below.<br>" + content.replace(/</g, "&lt;");
   }
   popup = new OpenLayers.Popup.FramedCloud("chicken", 
-                           feature.geometry.getBounds().getCenterLonLat(),
-                           new OpenLayers.Size(100,100),
-                           content,
-                           null, true, onPopupClose);
+    feature.geometry.getBounds().getCenterLonLat(),
+    new OpenLayers.Size(100,100),
+    content,
+    null, true, onPopupClose);
   feature.popup = popup;
   map.addPopup(popup);
 }
 
 function onFeatureUnselect(event) {
-    var feature = event.feature;
-    if(feature.popup) {
-        map.removePopup(feature.popup);
-        feature.popup.destroy();
-        delete feature.popup;
-    }
+  var feature = event.feature;
+  if(feature.popup) {
+      map.removePopup(feature.popup);
+      feature.popup.destroy();
+      delete feature.popup;
+  }
 }
