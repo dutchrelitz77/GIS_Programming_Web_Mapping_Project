@@ -60,7 +60,7 @@ h1, h2, h3 {
 
 .container-fluid.main, .container-fluid.main2 {
 	height: 556px;
-	background-color: whitesmoke;
+	background-color: #f2f2f2;
 }
 
 .container-fluid.main p {
