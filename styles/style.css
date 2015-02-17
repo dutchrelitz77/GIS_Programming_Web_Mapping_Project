@@ -52,7 +52,7 @@ h1, h2, h3 {
   padding: 0px;
 }
 
-.container.main, .container.main2 {
+.container-fluid.main, .container-fluid.main2 {
 	min-height: 500px;
 	background-color: white;
 }
