@@ -1,6 +1,7 @@
-// New code from online
+// Create projection
 var projection = ol.proj.get('EPSG:3857');
 
+// Create bing raster
 var raster = new ol.layer.Tile({
   source: new ol.source.BingMaps({
     imagerySet: 'AerialWithLabels',
@@ -8,15 +9,27 @@ var raster = new ol.layer.Tile({
   })
 });
 
-var vector = new ol.layer.Vector({
+// Add all layers
+
+// Add MTC layer
+var mtc = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
     url: 'kml/MTCEurope.kml'
   })
 });
 
+// Add Temples layer
+var temples = new ol.layer.Vector({
+  source: new ol.source.KML({
+    projection: projection,
+    url: 'kml/StreamGages.kml'
+  })
+});
+
+// Initialize map
 var map = new ol.Map({
-  layers: [raster, vector],
+  layers: [raster, mtc, temples],
   target: document.getElementById('map'),
   view: new ol.View({
     center: [876970.8463461736, 5859807.853963373],
@@ -25,6 +38,7 @@ var map = new ol.Map({
   })
 });
 
+// Display the features info
 var displayFeatureInfo = function(pixel) {
   var features = [];
   map.forEachFeatureAtPixel(pixel, function(feature, layer) {
@@ -55,29 +69,3 @@ map.on('pointermove', function(evt) {
 map.on('click', function(evt) {
   displayFeatureInfo(evt.pixel);
 });
-
-var exportKMLElement = document.getElementById('export-kml');
-if ('download' in exportKMLElement) {
-  var vectorSource = vector.getSource();
-  exportKMLElement.addEventListener('click', function(e) {
-    if (!exportKMLElement.href) {
-      var features = [];
-      vectorSource.forEachFeature(function(feature) {
-        var clone = feature.clone();
-        clone.setId(feature.getId());  // clone does not set the id
-        clone.getGeometry().transform(projection, 'EPSG:4326');
-        features.push(clone);
-      });
-      var string = new ol.format.KML().writeFeatures(features);
-      var base64 = exampleNS.strToBase64(string);
-      exportKMLElement.href =
-          'data:application/vnd.google-earth.kml+xml;base64,' + base64;
-    }
-  }, false);
-} else {
-  var info = document.getElementById('no-download');
-  /**
-   * display error message
-   */
-  info.style.display = '';
-}
