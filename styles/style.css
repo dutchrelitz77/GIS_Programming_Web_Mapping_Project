@@ -7,6 +7,10 @@
 	margin-top: -25px;
 }
 
+.header h4 {
+	padding: 0px 10px 0px 10px;
+}
+
 .col-xs-12.text-center{
 	color: black;
 	padding-top: -20px;
