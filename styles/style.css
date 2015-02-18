@@ -14,9 +14,10 @@ footer {
 /* Styling for the header */
 
 .header {
-  	padding-bottom: 10px;
-  	background-color: white;
-  	margin-top: -25px;
+	padding-bottom: 10px;
+	background-color: white;
+	margin-top: -25px;
+	border-bottom: 1px solid black;
 }
 
 .col-xs-12.text-center{
@@ -40,11 +41,6 @@ h1, h2, h3 {
 }
 
 /* Styling for the main containers */
-/*.row {
-  max-height: 556px;
-  margin-right: 0px;
-  margin-left: 0px;
-}*/
 
 .col-lg-2 {
 	background-color: #d0d0d0; 
@@ -54,11 +50,10 @@ h1, h2, h3 {
 .col-lg-10 {
 	background-color: white;
   padding: 0px;
-  height: 556px;
 }
 
 .container-fluid.main, .container-fluid.main2 {
-	height: 556px;
+	min-height: 500px;
 	background-color: #f2f2f2;
 }
 
