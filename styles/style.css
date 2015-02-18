@@ -40,16 +40,15 @@ h1, h2, h3 {
 }
 
 /* Styling for the main containers */
-.row {
+/*.row {
   max-height: 556px;
   margin-right: 0px;
   margin-left: 0px;
-}
+}*/
 
 .col-lg-2 {
 	background-color: #d0d0d0; 
 	padding-top: 20px;
-  height: 556px;
 }
 
 .col-lg-10 {
