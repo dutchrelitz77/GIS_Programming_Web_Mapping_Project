@@ -1,44 +1,73 @@
-var styles = [
-  'Road',
-  'Aerial',
-  'AerialWithLabels',
-  'collinsBart',
-  'ordnanceSurvey'
-];
-var layers = [];
-var i, ii;
-for (i = 0, ii = styles.length; i < ii; ++i) {
-  layers.push(new ol.layer.Tile({
-    visible: false,
-    preload: Infinity,
-    source: new ol.source.BingMaps({
-      key: 'Ak-dzM4wZjSqTlzveKz5u0d4IQ4bRzVI309GxmkgSVr1ewS6iPSrOvOKhA-CJlm3',
-      imagerySet: styles[i]
-      // use maxZoom 19 to see stretched tiles instead of the BingMaps
-      // "no photos at this zoom level" tiles
-      // maxZoom: 19
-    })
-  }));
-}
+// Create projection
+var projection = ol.proj.get('EPSG:3857');
 
-var map = new ol.Map({
-  layers: layers,
-  renderer: exampleNS.getRendererFromQueryString(),
-  // Improve user experience by loading tiles while dragging/zooming. Will make
-  // zooming choppy on mobile or slow devices.
-  loadTilesWhileInteracting: true,
-  target: 'map',
-  view: new ol.View({
-    center: [-6655.5402445057125, 6709968.258934638],
-    zoom: 13
+/* Add all layers to map */
+
+// Create bing raster layer
+var raster = new ol.layer.Tile({
+  source: new ol.source.BingMaps({
+    imagerySet: 'AerialWithLabels',
+    key: 'Ak-dzM4wZjSqTlzveKz5u0d4IQ4bRzVI309GxmkgSVr1ewS6iPSrOvOKhA-CJlm3'
   })
 });
 
-$('#layer-select').change(function() {
-  var style = $(this).find(':selected').val();
-  var i, ii;
-  for (i = 0, ii = layers.length; i < ii; ++i) {
-    layers[i].setVisible(styles[i] == style);
-  }
+// Add MTC layer
+var mtc = new ol.layer.Vector({
+  source: new ol.source.KML({
+    projection: projection,
+    url: 'kml/MTCEurope_try.kml'
+  })
 });
-$('#layer-select').trigger('change');
+
+// Add Temples layer
+var temples = new ol.layer.Vector({
+  source: new ol.source.KML({
+    projection: projection,
+    url: 'kml/StreamGages.kml'
+  })
+});
+
+/* Initialize the map and set the setting for it */
+
+// Initialize map
+var map = new ol.Map({
+  layers: [raster, mtc, temples],
+  target: document.getElementById('map'),
+  view: new ol.View({
+    center: [876970.8463461736, 5859807.853963373],
+    projection: projection,
+    zoom: 4
+  })
+});
+
+/* Settings for popup boxes */
+
+function onPopupClose(evt) {
+  select.unselectAll();
+}
+
+function onFeatureSelect(event) {
+  var feature = event.feature;
+  // Since KML is user-generated, do naive protection against
+  // Javascript.
+  var content = "<h2>"+feature.attributes.name + "</h2>" + feature.attributes.description;
+  if (content.search("<script") != -1) {
+    content = "Content contained Javascript! Escaped content below.<br>" + content.replace(/</g, "&lt;");
+  }
+  popup = new OpenLayers.Popup.FramedCloud("chicken", 
+    feature.geometry.getBounds().getCenterLonLat(),
+    new OpenLayers.Size(100,100),
+    content,
+    null, true, onPopupClose);
+  feature.popup = popup;
+  map.addPopup(popup);
+}
+
+function onFeatureUnselect(event) {
+  var feature = event.feature;
+  if(feature.popup) {
+      map.removePopup(feature.popup);
+      feature.popup.destroy();
+      delete feature.popup;
+  }
+}
