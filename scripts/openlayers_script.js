@@ -31,6 +31,9 @@ var temples = new ol.layer.Vector({
 
 // Initialize map
 var map = new ol.Map({
+  controls: ol.control.defaults().extend([
+    new ol.control.FullScreen()
+  ]),
   layers: [raster, mtc, temples],
   target: document.getElementById('map'),
   view: new ol.View({
