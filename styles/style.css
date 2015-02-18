@@ -1,21 +1,9 @@
-/* Styling for the footer */
-
-footer {
-	text-align: center;
-	height: 60px;
-	width: 100%;
-	background-color: #e8e8e8;
-}
-
-.text-muted {
-	padding-top: 15px;
-}
 
 /* Styling for the header */
 
 .header {
 	padding-bottom: 10px;
-	background-color: white;
+	background-color: #34495e;
 	margin-top: -25px;
 }
 
@@ -24,8 +12,8 @@ footer {
 	padding-top: -20px;
 }
 
-h1, h2, h3 {
-	color: #666666;
+h1, h2, h3, h4 {
+	color: #ffffff;
 }
 
 /* Styling for the map */
@@ -33,6 +21,7 @@ h1, h2, h3 {
 #map {
 	width: 100%;
 	height: 556px;
+	padding-top: 20px;
 }
 
 .olMap {
@@ -42,23 +31,23 @@ h1, h2, h3 {
 /* Styling for the main containers */
 
 .row {
-	margin-right: 0px;
-	margin-left: 0px;
+	margin-right: -15px;
+	margin-left: -15px;
 }
 
 .col-lg-2 {
 	background-color: #d0d0d0; 
 	padding-top: 20px;
+	padding-left: 20px;
 }
 
 .col-lg-10 {
-	background-color: white;
-  padding: 0px;
+  padding-top: 10px;
 }
 
 .container-fluid.main, .container-fluid.main2 {
 	min-height: 500px;
-	background-color: #f2f2f2;
+	background-color: white;
 }
 
 .container-fluid.main p {
@@ -66,4 +55,16 @@ h1, h2, h3 {
 	padding-left: 40px;
 }
 
-/* Custom Styling for the navbar */
+/* Styling for the footer */
+
+footer {
+	text-align: center;
+	min-height: 80px;
+	width: 100%;
+	background-color: #34495e;
+}
+
+.text-muted {
+	padding-top: 15px;
+	color: #ffffff;
+}
