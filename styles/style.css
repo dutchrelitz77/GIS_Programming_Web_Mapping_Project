@@ -17,7 +17,6 @@ footer {
 	padding-bottom: 10px;
 	background-color: white;
 	margin-top: -25px;
-	border-bottom: 1px solid black;
 }
 
 .col-xs-12.text-center{
@@ -41,6 +40,11 @@ h1, h2, h3 {
 }
 
 /* Styling for the main containers */
+
+.row {
+	margin-right: 0px;
+	margin-left: 0px;
+}
 
 .col-lg-2 {
 	background-color: #d0d0d0; 
