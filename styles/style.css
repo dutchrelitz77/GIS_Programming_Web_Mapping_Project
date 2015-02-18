@@ -16,6 +16,12 @@ h1, h2, h3, h4 {
 	color: #ffffff;
 }
 
+/* Styling for the navigation links */
+.navbar-brand {
+	font-weight: bold;
+	font-family: fantasy;
+}
+
 /* Styling for the map */
 
 #map {
