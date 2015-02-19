@@ -1,5 +1,5 @@
 html, body {
-	min-height: 100%;
+	height: 100%;
 }
 
 
@@ -78,6 +78,7 @@ h1, h2, h3, h4 {
 #main_content {
 	min-height: 100%;
 	margin-bottom: -60px;
+	padding-top: 70px;
 }
 
 .container-fluid.main p {
