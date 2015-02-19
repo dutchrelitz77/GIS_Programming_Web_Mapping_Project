@@ -35,7 +35,8 @@ var map = new ol.Map({
     new ol.control.FullScreen()
   ]),
   layers: [raster, mtc, temples],
-  target: document.getElementById('map'),
+  renderer: exampleNS.getRendererFromQueryString(),
+  target: 'map',
   view: new ol.View({
     center: [876970.8463461736, 5859807.853963373],
     projection: projection,
