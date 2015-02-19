@@ -31,9 +31,6 @@ var temples = new ol.layer.Vector({
 
 // Initialize map
 var map = new ol.Map({
-  controls: ol.control.defaults().extend([
-    new ol.control.FullScreen()
-  ]),
   layers: [raster, mtc, temples],
   target: document.getElementById('map'),
   view: new ol.View({
@@ -42,35 +39,3 @@ var map = new ol.Map({
     zoom: 4
   })
 });
-
-/* Settings for popup boxes */
-
-function onPopupClose(evt) {
-  select.unselectAll();
-}
-
-function onFeatureSelect(event) {
-  var feature = event.feature;
-  // Since KML is user-generated, do naive protection against
-  // Javascript.
-  var content = "<h2>"+feature.attributes.name + "</h2>" + feature.attributes.description;
-  if (content.search("<script") != -1) {
-    content = "Content contained Javascript! Escaped content below.<br>" + content.replace(/</g, "&lt;");
-  }
-  popup = new OpenLayers.Popup.FramedCloud("chicken", 
-    feature.geometry.getBounds().getCenterLonLat(),
-    new OpenLayers.Size(100,100),
-    content,
-    null, true, onPopupClose);
-  feature.popup = popup;
-  map.addPopup(popup);
-}
-
-function onFeatureUnselect(event) {
-  var feature = event.feature;
-  if(feature.popup) {
-      map.removePopup(feature.popup);
-      feature.popup.destroy();
-      delete feature.popup;
-  }
-}

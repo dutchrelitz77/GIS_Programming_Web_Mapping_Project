@@ -1,3 +1,7 @@
+html, body {
+	min-height: 100%;
+}
+
 
 /* Styling for the header */
 
@@ -24,7 +28,7 @@ h1, h2, h3, h4 {
 
 .navbar-default .navbar-brand, .navbar-brand {
 	font-weight: bold;
-	font-family: fantasy;
+	font-family: initial;
 	color: black;
 }
 
@@ -57,7 +61,6 @@ h1, h2, h3, h4 {
 }
 
 .col-lg-2 {
-	background-color: #efefef; 
 	padding-top: 20px;
 	padding-left: 20px;
 }
@@ -69,8 +72,12 @@ h1, h2, h3, h4 {
 }
 
 .container-fluid.main, .container-fluid.main2 {
-	min-height: 500px;
 	background-color: white;
+}
+
+#main_content {
+	min-height: 100%;
+	margin-bottom: -60px;
 }
 
 .container-fluid.main p {
@@ -82,7 +89,7 @@ h1, h2, h3, h4 {
 
 footer {
 	text-align: center;
-	min-height: 60px;
+	height: 60px;
 	width: 100%;
 	background-color: #34495e;
 }
