@@ -56,8 +56,8 @@ h1, h2, h3, h4 {
 /* Styling for the main containers */
 
 .row {
-	margin-right: -15px;
-	margin-left: -15px;
+	margin-right: 0px;
+	margin-left: 0px;
 }
 
 .col-lg-2 {
@@ -78,6 +78,7 @@ h1, h2, h3, h4 {
 #main_content {
 	min-height: 100%;
 	margin-bottom: -60px;
+	padding-bottom: 60px;
 	padding-top: 70px;
 }
 
