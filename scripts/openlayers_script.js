@@ -1,14 +1,6 @@
 // Create projection
 var projection = ol.proj.get('EPSG:3857');
 
-/**
- * Create an overlay to anchor the popup to the map.
- */
-var overlay = new ol.Overlay({
-  element: container
-});
-
-
 /* Add all layers to map */
 
 // Create bing raster layer
