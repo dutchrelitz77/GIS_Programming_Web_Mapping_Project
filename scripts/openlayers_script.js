@@ -49,7 +49,6 @@ var map = new ol.Map({
   layers: [raster, mtc, temples],
   target: document.getElementById('map'),
   renderer: exampleNS.getRendererFromQueryString(),
-  overlays: [overlay],
   view: new ol.View({
     center: [876970.8463461736, 5859807.853963373],
     projection: projection,
