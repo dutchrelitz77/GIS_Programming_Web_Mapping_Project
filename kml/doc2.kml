@@ -82,8 +82,11 @@
   </Folder>
   <Style id="IconStyle00">
     <IconStyle>
-      <Icon><href>kml/church.png</href></Icon>
-      <scale>1.562500</scale>
+      <scale>1.3</scale>
+      <Icon>
+        <href>kml/church.png</href>
+      </Icon>
+      <hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
     </IconStyle>
     <LabelStyle>
       <color>00000000</color>
