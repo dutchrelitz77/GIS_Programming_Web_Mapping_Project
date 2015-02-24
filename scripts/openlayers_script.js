@@ -30,6 +30,8 @@ var temples = new ol.layer.Vector({
   })
 });
 
+// Get layers extents
+
 /* Initialize the map and set the setting for it */
 
 // Initialize map
@@ -42,7 +44,7 @@ var map = new ol.Map({
     new ol.control.ZoomToExtent({
       extent: [
         813079.7791264898, 5929220.284081122,
-        848966.9639063801, 5936863.986909639
+        898966.9639063801, 5936863.986909639
       ]
     })
   ]),
