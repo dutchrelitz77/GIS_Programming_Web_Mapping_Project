@@ -82,7 +82,7 @@
   </Folder>
   <Style id="IconStyle00">
     <IconStyle>
-      <Icon><href>kml/church.png</href></Icon>
+      <Icon><href>kml/greenDot.png</href></Icon>
       <scale>1.562500</scale>
     </IconStyle>
     <LabelStyle>

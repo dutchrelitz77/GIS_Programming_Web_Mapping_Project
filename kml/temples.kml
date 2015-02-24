@@ -1,0 +1,2602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+ <Document id="Temples.kml">
+  <name>Temples.kml</name>
+  <Snippet></Snippet>
+  <Folder id="FeatureLayer0">
+    <name>Temples</name>
+    <Snippet></Snippet>
+    <Placemark id="ID_00000">
+      <name>Preston England Temple</name>
+      <Snippet><![CDATA[ ]]></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+        <head>
+
+          <META http-equiv="Content-Type" content="text/html">
+
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+            </head>
+
+            <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+              <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+                <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+                  <td>Preston England Temple</td>
+
+                </tr>
+
+                <tr>
+
+                  <td>
+
+                    <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+                      <tr>
+
+                        <td>FID</td>
+
+                        <td>0</td>
+
+                      </tr>
+
+                      <tr bgcolor="#D4E4F3">
+
+                        <td>OID_</td>
+
+                        <td>0</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td>Name</td>
+
+                        <td>Preston England Temple</td>
+
+                      </tr>
+
+                      <tr bgcolor="#D4E4F3">
+
+                        <td>FolderPath</td>
+
+                        <td>Temples.kml/Temples</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td>SymbolID</td>
+
+                        <td>0</td>
+
+                      </tr>
+
+                      <tr bgcolor="#D4E4F3">
+
+                        <td>AltMode</td>
+
+                        <td>-1</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td>Base</td>
+
+                        <td>0</td>
+
+                      </tr>
+
+                      <tr bgcolor="#D4E4F3">
+
+                        <td>Snippet</td>
+
+                        <td></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td>PopupInfo</td>
+
+                        <td></td>
+
+                      </tr>
+
+                      <tr bgcolor="#D4E4F3">
+
+                        <td>HasLabel</td>
+
+                        <td>-1</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td>LabelID</td>
+
+                        <td>0</td>
+
+                      </tr>
+
+                      <tr bgcolor="#D4E4F3">
+
+                        <td>Status_1</td>
+
+                        <td>Operating</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td>Announce</td>
+
+                        <td>October 19, 1992</td>
+
+                      </tr>
+
+                      <tr bgcolor="#D4E4F3">
+
+                        <td>Groundbrea</td>
+
+                        <td>June 12, 1994</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td>Dedicated</td>
+
+                        <td>June 10, 1998</td>
+
+                      </tr>
+
+                      <tr bgcolor="#D4E4F3">
+
+                        <td>Historical</td>
+
+                        <td>On August 6, 1837, the Preston Ward was organized, which is the longest continuously functioning unit of the Church in the world.</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td>Picture</td>
+
+                        <td></td>
+
+                      </tr>
+
+                    </table>
+
+                  </td>
+
+                </tr>
+
+              </table>
+
+            </body>
+
+          </html>
+
+          ]]></description>
+          <styleUrl>#IconStyle00</styleUrl>
+          <Point>
+            <altitudeMode>clampToGround</altitudeMode>
+            <coordinates> -2.63134344499997,53.67248918600006,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="ID_00001">
+          <name>London Temple</name>
+          <Snippet><![CDATA[ ]]></Snippet>
+          <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+            <head>
+
+              <META http-equiv="Content-Type" content="text/html">
+
+                <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+                </head>
+
+                <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+                  <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+                    <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+                      <td>London Temple</td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td>
+
+                        <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+                          <tr>
+
+                            <td>FID</td>
+
+                            <td>1</td>
+
+                          </tr>
+
+                          <tr bgcolor="#D4E4F3">
+
+                            <td>OID_</td>
+
+                            <td>0</td>
+
+                          </tr>
+
+                          <tr>
+
+                            <td>Name</td>
+
+                            <td>London Temple</td>
+
+                          </tr>
+
+                          <tr bgcolor="#D4E4F3">
+
+                            <td>FolderPath</td>
+
+                            <td>Temples.kml/Temples</td>
+
+                          </tr>
+
+                          <tr>
+
+                            <td>SymbolID</td>
+
+                            <td>0</td>
+
+                          </tr>
+
+                          <tr bgcolor="#D4E4F3">
+
+                            <td>AltMode</td>
+
+                            <td>-1</td>
+
+                          </tr>
+
+                          <tr>
+
+                            <td>Base</td>
+
+                            <td>0</td>
+
+                          </tr>
+
+                          <tr bgcolor="#D4E4F3">
+
+                            <td>Snippet</td>
+
+                            <td></td>
+
+                          </tr>
+
+                          <tr>
+
+                            <td>PopupInfo</td>
+
+                            <td></td>
+
+                          </tr>
+
+                          <tr bgcolor="#D4E4F3">
+
+                            <td>HasLabel</td>
+
+                            <td>-1</td>
+
+                          </tr>
+
+                          <tr>
+
+                            <td>LabelID</td>
+
+                            <td>0</td>
+
+                          </tr>
+
+                          <tr bgcolor="#D4E4F3">
+
+                            <td>Status_1</td>
+
+                            <td>Operating</td>
+
+                          </tr>
+
+                          <tr>
+
+                            <td>Announce</td>
+
+                            <td>August 10, 1953</td>
+
+                          </tr>
+
+                          <tr bgcolor="#D4E4F3">
+
+                            <td>Groundbrea</td>
+
+                            <td>August 27, 1955</td>
+
+                          </tr>
+
+                          <tr>
+
+                            <td>Dedicated</td>
+
+                            <td>September 9, 1958</td>
+
+                          </tr>
+
+                          <tr bgcolor="#D4E4F3">
+
+                            <td>Historical</td>
+
+                            <td>This was the first temple built in the United Kingdom.</td>
+
+                          </tr>
+
+                          <tr>
+
+                            <td>Picture</td>
+
+                            <td></td>
+
+                          </tr>
+
+                        </table>
+
+                      </td>
+
+                    </tr>
+
+                  </table>
+
+                </body>
+
+              </html>
+
+              ]]></description>
+              <styleUrl>#IconStyle00</styleUrl>
+              <Point>
+                <altitudeMode>clampToGround</altitudeMode>
+                <coordinates> -0.05212697599995408,51.16263188700003,0</coordinates>
+              </Point>
+            </Placemark>
+            <Placemark id="ID_00002">
+              <name>Stockholm Sweden Temple</name>
+              <Snippet><![CDATA[ ]]></Snippet>
+              <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+                <head>
+
+                  <META http-equiv="Content-Type" content="text/html">
+
+                    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+                    </head>
+
+                    <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+                      <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+                        <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+                          <td>Stockholm Sweden Temple</td>
+
+                        </tr>
+
+                        <tr>
+
+                          <td>
+
+                            <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+                              <tr>
+
+                                <td>FID</td>
+
+                                <td>2</td>
+
+                              </tr>
+
+                              <tr bgcolor="#D4E4F3">
+
+                                <td>OID_</td>
+
+                                <td>0</td>
+
+                              </tr>
+
+                              <tr>
+
+                                <td>Name</td>
+
+                                <td>Stockholm Sweden Temple</td>
+
+                              </tr>
+
+                              <tr bgcolor="#D4E4F3">
+
+                                <td>FolderPath</td>
+
+                                <td>Temples.kml/Temples</td>
+
+                              </tr>
+
+                              <tr>
+
+                                <td>SymbolID</td>
+
+                                <td>0</td>
+
+                              </tr>
+
+                              <tr bgcolor="#D4E4F3">
+
+                                <td>AltMode</td>
+
+                                <td>-1</td>
+
+                              </tr>
+
+                              <tr>
+
+                                <td>Base</td>
+
+                                <td>0</td>
+
+                              </tr>
+
+                              <tr bgcolor="#D4E4F3">
+
+                                <td>Snippet</td>
+
+                                <td></td>
+
+                              </tr>
+
+                              <tr>
+
+                                <td>PopupInfo</td>
+
+                                <td></td>
+
+                              </tr>
+
+                              <tr bgcolor="#D4E4F3">
+
+                                <td>HasLabel</td>
+
+                                <td>-1</td>
+
+                              </tr>
+
+                              <tr>
+
+                                <td>LabelID</td>
+
+                                <td>0</td>
+
+                              </tr>
+
+                              <tr bgcolor="#D4E4F3">
+
+                                <td>Status_1</td>
+
+                                <td>Operating</td>
+
+                              </tr>
+
+                              <tr>
+
+                                <td>Announce</td>
+
+                                <td>April 1, 1981</td>
+
+                              </tr>
+
+                              <tr bgcolor="#D4E4F3">
+
+                                <td>Groundbrea</td>
+
+                                <td>March 17, 1984</td>
+
+                              </tr>
+
+                              <tr>
+
+                                <td>Dedicated</td>
+
+                                <td>July 4, 1985</td>
+
+                              </tr>
+
+                              <tr bgcolor="#D4E4F3">
+
+                                <td>Historical</td>
+
+                                <td>This was the first temple built in Scandinavia and in Sweden.</td>
+
+                              </tr>
+
+                              <tr>
+
+                                <td>Picture</td>
+
+                                <td></td>
+
+                              </tr>
+
+                            </table>
+
+                          </td>
+
+                        </tr>
+
+                      </table>
+
+                    </body>
+
+                  </html>
+
+                  ]]></description>
+                  <styleUrl>#IconStyle00</styleUrl>
+                  <Point>
+                    <altitudeMode>clampToGround</altitudeMode>
+                    <coordinates> 18.10917081100007,59.12468606900006,0</coordinates>
+                  </Point>
+                </Placemark>
+                <Placemark id="ID_00003">
+                  <name>Helsinki Finland Temple</name>
+                  <Snippet><![CDATA[ ]]></Snippet>
+                  <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+                    <head>
+
+                      <META http-equiv="Content-Type" content="text/html">
+
+                        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+                        </head>
+
+                        <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+                          <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+                            <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+                              <td>Helsinki Finland Temple</td>
+
+                            </tr>
+
+                            <tr>
+
+                              <td>
+
+                                <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+                                  <tr>
+
+                                    <td>FID</td>
+
+                                    <td>3</td>
+
+                                  </tr>
+
+                                  <tr bgcolor="#D4E4F3">
+
+                                    <td>OID_</td>
+
+                                    <td>0</td>
+
+                                  </tr>
+
+                                  <tr>
+
+                                    <td>Name</td>
+
+                                    <td>Helsinki Finland Temple</td>
+
+                                  </tr>
+
+                                  <tr bgcolor="#D4E4F3">
+
+                                    <td>FolderPath</td>
+
+                                    <td>Temples.kml/Temples</td>
+
+                                  </tr>
+
+                                  <tr>
+
+                                    <td>SymbolID</td>
+
+                                    <td>0</td>
+
+                                  </tr>
+
+                                  <tr bgcolor="#D4E4F3">
+
+                                    <td>AltMode</td>
+
+                                    <td>-1</td>
+
+                                  </tr>
+
+                                  <tr>
+
+                                    <td>Base</td>
+
+                                    <td>0</td>
+
+                                  </tr>
+
+                                  <tr bgcolor="#D4E4F3">
+
+                                    <td>Snippet</td>
+
+                                    <td></td>
+
+                                  </tr>
+
+                                  <tr>
+
+                                    <td>PopupInfo</td>
+
+                                    <td></td>
+
+                                  </tr>
+
+                                  <tr bgcolor="#D4E4F3">
+
+                                    <td>HasLabel</td>
+
+                                    <td>-1</td>
+
+                                  </tr>
+
+                                  <tr>
+
+                                    <td>LabelID</td>
+
+                                    <td>0</td>
+
+                                  </tr>
+
+                                  <tr bgcolor="#D4E4F3">
+
+                                    <td>Status_1</td>
+
+                                    <td>Operating</td>
+
+                                  </tr>
+
+                                  <tr>
+
+                                    <td>Announce</td>
+
+                                    <td>April 2, 2000</td>
+
+                                  </tr>
+
+                                  <tr bgcolor="#D4E4F3">
+
+                                    <td>Groundbrea</td>
+
+                                    <td>March 29, 2003</td>
+
+                                  </tr>
+
+                                  <tr>
+
+                                    <td>Dedicated</td>
+
+                                    <td>October 22, 2006</td>
+
+                                  </tr>
+
+                                  <tr bgcolor="#D4E4F3">
+
+                                    <td>Historical</td>
+
+                                    <td>This was the first temple built in Finland and the last temple dedicated by President Gordon B. HInckley.</td>
+
+                                  </tr>
+
+                                  <tr>
+
+                                    <td>Picture</td>
+
+                                    <td></td>
+
+                                  </tr>
+
+                                </table>
+
+                              </td>
+
+                            </tr>
+
+                          </table>
+
+                        </body>
+
+                      </html>
+
+                      ]]></description>
+                      <styleUrl>#IconStyle00</styleUrl>
+                      <Point>
+                        <altitudeMode>clampToGround</altitudeMode>
+                        <coordinates> 24.78163700000005,60.22517900000008,0</coordinates>
+                      </Point>
+                    </Placemark>
+                    <Placemark id="ID_00004">
+                      <name>Copenhagen Denmark Temple</name>
+                      <Snippet><![CDATA[ ]]></Snippet>
+                      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+                        <head>
+
+                          <META http-equiv="Content-Type" content="text/html">
+
+                            <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+                            </head>
+
+                            <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+                              <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+                                <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+                                  <td>Copenhagen Denmark Temple</td>
+
+                                </tr>
+
+                                <tr>
+
+                                  <td>
+
+                                    <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+                                      <tr>
+
+                                        <td>FID</td>
+
+                                        <td>4</td>
+
+                                      </tr>
+
+                                      <tr bgcolor="#D4E4F3">
+
+                                        <td>OID_</td>
+
+                                        <td>0</td>
+
+                                      </tr>
+
+                                      <tr>
+
+                                        <td>Name</td>
+
+                                        <td>Copenhagen Denmark Temple</td>
+
+                                      </tr>
+
+                                      <tr bgcolor="#D4E4F3">
+
+                                        <td>FolderPath</td>
+
+                                        <td>Temples.kml/Temples</td>
+
+                                      </tr>
+
+                                      <tr>
+
+                                        <td>SymbolID</td>
+
+                                        <td>0</td>
+
+                                      </tr>
+
+                                      <tr bgcolor="#D4E4F3">
+
+                                        <td>AltMode</td>
+
+                                        <td>-1</td>
+
+                                      </tr>
+
+                                      <tr>
+
+                                        <td>Base</td>
+
+                                        <td>0</td>
+
+                                      </tr>
+
+                                      <tr bgcolor="#D4E4F3">
+
+                                        <td>Snippet</td>
+
+                                        <td></td>
+
+                                      </tr>
+
+                                      <tr>
+
+                                        <td>PopupInfo</td>
+
+                                        <td></td>
+
+                                      </tr>
+
+                                      <tr bgcolor="#D4E4F3">
+
+                                        <td>HasLabel</td>
+
+                                        <td>-1</td>
+
+                                      </tr>
+
+                                      <tr>
+
+                                        <td>LabelID</td>
+
+                                        <td>0</td>
+
+                                      </tr>
+
+                                      <tr bgcolor="#D4E4F3">
+
+                                        <td>Status_1</td>
+
+                                        <td>Operating</td>
+
+                                      </tr>
+
+                                      <tr>
+
+                                        <td>Announce</td>
+
+                                        <td>March 17, 1999</td>
+
+                                      </tr>
+
+                                      <tr bgcolor="#D4E4F3">
+
+                                        <td>Groundbrea</td>
+
+                                        <td>April 24, 1999</td>
+
+                                      </tr>
+
+                                      <tr>
+
+                                        <td>Dedicated</td>
+
+                                        <td>May 23, 2004</td>
+
+                                      </tr>
+
+                                      <tr bgcolor="#D4E4F3">
+
+                                        <td>Historical</td>
+
+                                        <td>This was the first temple in Denmark and the second temple built from an existing building.</td>
+
+                                      </tr>
+
+                                      <tr>
+
+                                        <td>Picture</td>
+
+                                        <td></td>
+
+                                      </tr>
+
+                                    </table>
+
+                                  </td>
+
+                                </tr>
+
+                              </table>
+
+                            </body>
+
+                          </html>
+
+                          ]]></description>
+                          <styleUrl>#IconStyle00</styleUrl>
+                          <Point>
+                            <altitudeMode>clampToGround</altitudeMode>
+                            <coordinates> 12.53393755000008,55.69270444500006,0</coordinates>
+                          </Point>
+                        </Placemark>
+                        <Placemark id="ID_00005">
+                          <name>The Hague Netherlands Temple</name>
+                          <Snippet><![CDATA[ ]]></Snippet>
+                          <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+                            <head>
+
+                              <META http-equiv="Content-Type" content="text/html">
+
+                                <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+                                </head>
+
+                                <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+                                  <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+                                    <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+                                      <td>The Hague Netherlands Temple</td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                      <td>
+
+                                        <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+                                          <tr>
+
+                                            <td>FID</td>
+
+                                            <td>5</td>
+
+                                          </tr>
+
+                                          <tr bgcolor="#D4E4F3">
+
+                                            <td>OID_</td>
+
+                                            <td>0</td>
+
+                                          </tr>
+
+                                          <tr>
+
+                                            <td>Name</td>
+
+                                            <td>The Hague Netherlands Temple</td>
+
+                                          </tr>
+
+                                          <tr bgcolor="#D4E4F3">
+
+                                            <td>FolderPath</td>
+
+                                            <td>Temples.kml/Temples</td>
+
+                                          </tr>
+
+                                          <tr>
+
+                                            <td>SymbolID</td>
+
+                                            <td>0</td>
+
+                                          </tr>
+
+                                          <tr bgcolor="#D4E4F3">
+
+                                            <td>AltMode</td>
+
+                                            <td>-1</td>
+
+                                          </tr>
+
+                                          <tr>
+
+                                            <td>Base</td>
+
+                                            <td>0</td>
+
+                                          </tr>
+
+                                          <tr bgcolor="#D4E4F3">
+
+                                            <td>Snippet</td>
+
+                                            <td></td>
+
+                                          </tr>
+
+                                          <tr>
+
+                                            <td>PopupInfo</td>
+
+                                            <td></td>
+
+                                          </tr>
+
+                                          <tr bgcolor="#D4E4F3">
+
+                                            <td>HasLabel</td>
+
+                                            <td>-1</td>
+
+                                          </tr>
+
+                                          <tr>
+
+                                            <td>LabelID</td>
+
+                                            <td>0</td>
+
+                                          </tr>
+
+                                          <tr bgcolor="#D4E4F3">
+
+                                            <td>Status_1</td>
+
+                                            <td>Operating</td>
+
+                                          </tr>
+
+                                          <tr>
+
+                                            <td>Announce</td>
+
+                                            <td>August 16, 1999</td>
+
+                                          </tr>
+
+                                          <tr bgcolor="#D4E4F3">
+
+                                            <td>Groundbrea</td>
+
+                                            <td>August 26, 2000</td>
+
+                                          </tr>
+
+                                          <tr>
+
+                                            <td>Dedicated</td>
+
+                                            <td>September 8, 2002</td>
+
+                                          </tr>
+
+                                          <tr bgcolor="#D4E4F3">
+
+                                            <td>Historical</td>
+
+                                            <td>This was the first temple built in the Netherlands.</td>
+
+                                          </tr>
+
+                                          <tr>
+
+                                            <td>Picture</td>
+
+                                            <td></td>
+
+                                          </tr>
+
+                                        </table>
+
+                                      </td>
+
+                                    </tr>
+
+                                  </table>
+
+                                </body>
+
+                              </html>
+
+                              ]]></description>
+                              <styleUrl>#IconStyle00</styleUrl>
+                              <Point>
+                                <altitudeMode>clampToGround</altitudeMode>
+                                <coordinates> 4.502921858000036,52.05446603000007,0</coordinates>
+                              </Point>
+                            </Placemark>
+                            <Placemark id="ID_00006">
+                              <name>Freiberg Germany Temple</name>
+                              <Snippet><![CDATA[ ]]></Snippet>
+                              <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+                                <head>
+
+                                  <META http-equiv="Content-Type" content="text/html">
+
+                                    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+                                    </head>
+
+                                    <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+                                      <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+                                        <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+                                          <td>Freiberg Germany Temple</td>
+
+                                        </tr>
+
+                                        <tr>
+
+                                          <td>
+
+                                            <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+                                              <tr>
+
+                                                <td>FID</td>
+
+                                                <td>6</td>
+
+                                              </tr>
+
+                                              <tr bgcolor="#D4E4F3">
+
+                                                <td>OID_</td>
+
+                                                <td>0</td>
+
+                                              </tr>
+
+                                              <tr>
+
+                                                <td>Name</td>
+
+                                                <td>Freiberg Germany Temple</td>
+
+                                              </tr>
+
+                                              <tr bgcolor="#D4E4F3">
+
+                                                <td>FolderPath</td>
+
+                                                <td>Temples.kml/Temples</td>
+
+                                              </tr>
+
+                                              <tr>
+
+                                                <td>SymbolID</td>
+
+                                                <td>0</td>
+
+                                              </tr>
+
+                                              <tr bgcolor="#D4E4F3">
+
+                                                <td>AltMode</td>
+
+                                                <td>-1</td>
+
+                                              </tr>
+
+                                              <tr>
+
+                                                <td>Base</td>
+
+                                                <td>0</td>
+
+                                              </tr>
+
+                                              <tr bgcolor="#D4E4F3">
+
+                                                <td>Snippet</td>
+
+                                                <td></td>
+
+                                              </tr>
+
+                                              <tr>
+
+                                                <td>PopupInfo</td>
+
+                                                <td></td>
+
+                                              </tr>
+
+                                              <tr bgcolor="#D4E4F3">
+
+                                                <td>HasLabel</td>
+
+                                                <td>-1</td>
+
+                                              </tr>
+
+                                              <tr>
+
+                                                <td>LabelID</td>
+
+                                                <td>0</td>
+
+                                              </tr>
+
+                                              <tr bgcolor="#D4E4F3">
+
+                                                <td>Status_1</td>
+
+                                                <td>Operating</td>
+
+                                              </tr>
+
+                                              <tr>
+
+                                                <td>Announce</td>
+
+                                                <td>October 9, 1982</td>
+
+                                              </tr>
+
+                                              <tr bgcolor="#D4E4F3">
+
+                                                <td>Groundbrea</td>
+
+                                                <td>April 23, 1983</td>
+
+                                              </tr>
+
+                                              <tr>
+
+                                                <td>Dedicated</td>
+
+                                                <td>June 30, 1985</td>
+
+                                              </tr>
+
+                                              <tr bgcolor="#D4E4F3">
+
+                                                <td>Historical</td>
+
+                                                <td>This was the first temple built in a communist nation and the first built in Germany.</td>
+
+                                              </tr>
+
+                                              <tr>
+
+                                                <td>Picture</td>
+
+                                                <td></td>
+
+                                              </tr>
+
+                                            </table>
+
+                                          </td>
+
+                                        </tr>
+
+                                      </table>
+
+                                    </body>
+
+                                  </html>
+
+                                  ]]></description>
+                                  <styleUrl>#IconStyle00</styleUrl>
+                                  <Point>
+                                    <altitudeMode>clampToGround</altitudeMode>
+                                    <coordinates> 13.32205000000005,50.92232000000007,0</coordinates>
+                                  </Point>
+                                </Placemark>
+                                <Placemark id="ID_00007">
+                                  <name>Frankfurt Germany Temple</name>
+                                  <Snippet><![CDATA[ ]]></Snippet>
+                                  <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+                                    <head>
+
+                                      <META http-equiv="Content-Type" content="text/html">
+
+                                        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+                                        </head>
+
+                                        <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+                                          <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+                                            <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+                                              <td>Frankfurt Germany Temple</td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                              <td>
+
+                                                <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+                                                  <tr>
+
+                                                    <td>FID</td>
+
+                                                    <td>7</td>
+
+                                                  </tr>
+
+                                                  <tr bgcolor="#D4E4F3">
+
+                                                    <td>OID_</td>
+
+                                                    <td>0</td>
+
+                                                  </tr>
+
+                                                  <tr>
+
+                                                    <td>Name</td>
+
+                                                    <td>Frankfurt Germany Temple</td>
+
+                                                  </tr>
+
+                                                  <tr bgcolor="#D4E4F3">
+
+                                                    <td>FolderPath</td>
+
+                                                    <td>Temples.kml/Temples</td>
+
+                                                  </tr>
+
+                                                  <tr>
+
+                                                    <td>SymbolID</td>
+
+                                                    <td>0</td>
+
+                                                  </tr>
+
+                                                  <tr bgcolor="#D4E4F3">
+
+                                                    <td>AltMode</td>
+
+                                                    <td>-1</td>
+
+                                                  </tr>
+
+                                                  <tr>
+
+                                                    <td>Base</td>
+
+                                                    <td>0</td>
+
+                                                  </tr>
+
+                                                  <tr bgcolor="#D4E4F3">
+
+                                                    <td>Snippet</td>
+
+                                                    <td></td>
+
+                                                  </tr>
+
+                                                  <tr>
+
+                                                    <td>PopupInfo</td>
+
+                                                    <td></td>
+
+                                                  </tr>
+
+                                                  <tr bgcolor="#D4E4F3">
+
+                                                    <td>HasLabel</td>
+
+                                                    <td>-1</td>
+
+                                                  </tr>
+
+                                                  <tr>
+
+                                                    <td>LabelID</td>
+
+                                                    <td>0</td>
+
+                                                  </tr>
+
+                                                  <tr bgcolor="#D4E4F3">
+
+                                                    <td>Status_1</td>
+
+                                                    <td>Operating</td>
+
+                                                  </tr>
+
+                                                  <tr>
+
+                                                    <td>Announce</td>
+
+                                                    <td>April 1, 1981</td>
+
+                                                  </tr>
+
+                                                  <tr bgcolor="#D4E4F3">
+
+                                                    <td>Groundbrea</td>
+
+                                                    <td>July 1, 1985</td>
+
+                                                  </tr>
+
+                                                  <tr>
+
+                                                    <td>Dedicated</td>
+
+                                                    <td>August 30, 1987</td>
+
+                                                  </tr>
+
+                                                  <tr bgcolor="#D4E4F3">
+
+                                                    <td>Historical</td>
+
+                                                    <td>Fifth temple built in Europe, and second built in Germany.</td>
+
+                                                  </tr>
+
+                                                  <tr>
+
+                                                    <td>Picture</td>
+
+                                                    <td></td>
+
+                                                  </tr>
+
+                                                </table>
+
+                                              </td>
+
+                                            </tr>
+
+                                          </table>
+
+                                        </body>
+
+                                      </html>
+
+                                      ]]></description>
+                                      <styleUrl>#IconStyle00</styleUrl>
+                                      <Point>
+                                        <altitudeMode>clampToGround</altitudeMode>
+                                        <coordinates> 8.641313939000042,50.25823954500004,0</coordinates>
+                                      </Point>
+                                    </Placemark>
+                                    <Placemark id="ID_00008">
+                                      <name>Bern Switzerland Temple</name>
+                                      <Snippet><![CDATA[ ]]></Snippet>
+                                      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+                                        <head>
+
+                                          <META http-equiv="Content-Type" content="text/html">
+
+                                            <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+                                            </head>
+
+                                            <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+                                              <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+                                                <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+                                                  <td>Bern Switzerland Temple</td>
+
+                                                </tr>
+
+                                                <tr>
+
+                                                  <td>
+
+                                                    <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+                                                      <tr>
+
+                                                        <td>FID</td>
+
+                                                        <td>8</td>
+
+                                                      </tr>
+
+                                                      <tr bgcolor="#D4E4F3">
+
+                                                        <td>OID_</td>
+
+                                                        <td>0</td>
+
+                                                      </tr>
+
+                                                      <tr>
+
+                                                        <td>Name</td>
+
+                                                        <td>Bern Switzerland Temple</td>
+
+                                                      </tr>
+
+                                                      <tr bgcolor="#D4E4F3">
+
+                                                        <td>FolderPath</td>
+
+                                                        <td>Temples.kml/Temples</td>
+
+                                                      </tr>
+
+                                                      <tr>
+
+                                                        <td>SymbolID</td>
+
+                                                        <td>0</td>
+
+                                                      </tr>
+
+                                                      <tr bgcolor="#D4E4F3">
+
+                                                        <td>AltMode</td>
+
+                                                        <td>-1</td>
+
+                                                      </tr>
+
+                                                      <tr>
+
+                                                        <td>Base</td>
+
+                                                        <td>0</td>
+
+                                                      </tr>
+
+                                                      <tr bgcolor="#D4E4F3">
+
+                                                        <td>Snippet</td>
+
+                                                        <td></td>
+
+                                                      </tr>
+
+                                                      <tr>
+
+                                                        <td>PopupInfo</td>
+
+                                                        <td></td>
+
+                                                      </tr>
+
+                                                      <tr bgcolor="#D4E4F3">
+
+                                                        <td>HasLabel</td>
+
+                                                        <td>-1</td>
+
+                                                      </tr>
+
+                                                      <tr>
+
+                                                        <td>LabelID</td>
+
+                                                        <td>0</td>
+
+                                                      </tr>
+
+                                                      <tr bgcolor="#D4E4F3">
+
+                                                        <td>Status_1</td>
+
+                                                        <td>Operating</td>
+
+                                                      </tr>
+
+                                                      <tr>
+
+                                                        <td>Announce</td>
+
+                                                        <td>July 1, 1952</td>
+
+                                                      </tr>
+
+                                                      <tr bgcolor="#D4E4F3">
+
+                                                        <td>Groundbrea</td>
+
+                                                        <td>August 5, 1953</td>
+
+                                                      </tr>
+
+                                                      <tr>
+
+                                                        <td>Dedicated</td>
+
+                                                        <td>September 11, 1955</td>
+
+                                                      </tr>
+
+                                                      <tr bgcolor="#D4E4F3">
+
+                                                        <td>Historical</td>
+
+                                                        <td>First temple built in Europe.</td>
+
+                                                      </tr>
+
+                                                      <tr>
+
+                                                        <td>Picture</td>
+
+                                                        <td></td>
+
+                                                      </tr>
+
+                                                    </table>
+
+                                                  </td>
+
+                                                </tr>
+
+                                              </table>
+
+                                            </body>
+
+                                          </html>
+
+                                          ]]></description>
+                                          <styleUrl>#IconStyle00</styleUrl>
+                                          <Point>
+                                            <altitudeMode>clampToGround</altitudeMode>
+                                            <coordinates> 7.458250601000032,47.00211224300006,0</coordinates>
+                                          </Point>
+                                        </Placemark>
+                                        <Placemark id="ID_00009">
+                                          <name>Paris France Temple</name>
+                                          <Snippet><![CDATA[ ]]></Snippet>
+                                          <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+                                            <head>
+
+                                              <META http-equiv="Content-Type" content="text/html">
+
+                                                <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+                                                </head>
+
+                                                <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+                                                  <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+                                                    <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+                                                      <td>Paris France Temple</td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                      <td>
+
+                                                        <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+                                                          <tr>
+
+                                                            <td>FID</td>
+
+                                                            <td>9</td>
+
+                                                          </tr>
+
+                                                          <tr bgcolor="#D4E4F3">
+
+                                                            <td>OID_</td>
+
+                                                            <td>0</td>
+
+                                                          </tr>
+
+                                                          <tr>
+
+                                                            <td>Name</td>
+
+                                                            <td>Paris France Temple</td>
+
+                                                          </tr>
+
+                                                          <tr bgcolor="#D4E4F3">
+
+                                                            <td>FolderPath</td>
+
+                                                            <td>Temples.kml/Temples</td>
+
+                                                          </tr>
+
+                                                          <tr>
+
+                                                            <td>SymbolID</td>
+
+                                                            <td>0</td>
+
+                                                          </tr>
+
+                                                          <tr bgcolor="#D4E4F3">
+
+                                                            <td>AltMode</td>
+
+                                                            <td>-1</td>
+
+                                                          </tr>
+
+                                                          <tr>
+
+                                                            <td>Base</td>
+
+                                                            <td>0</td>
+
+                                                          </tr>
+
+                                                          <tr bgcolor="#D4E4F3">
+
+                                                            <td>Snippet</td>
+
+                                                            <td></td>
+
+                                                          </tr>
+
+                                                          <tr>
+
+                                                            <td>PopupInfo</td>
+
+                                                            <td></td>
+
+                                                          </tr>
+
+                                                          <tr bgcolor="#D4E4F3">
+
+                                                            <td>HasLabel</td>
+
+                                                            <td>-1</td>
+
+                                                          </tr>
+
+                                                          <tr>
+
+                                                            <td>LabelID</td>
+
+                                                            <td>0</td>
+
+                                                          </tr>
+
+                                                          <tr bgcolor="#D4E4F3">
+
+                                                            <td>Status_1</td>
+
+                                                            <td>Under Construction</td>
+
+                                                          </tr>
+
+                                                          <tr>
+
+                                                            <td>Announce</td>
+
+                                                            <td>October 1, 2011</td>
+
+                                                          </tr>
+
+                                                          <tr bgcolor="#D4E4F3">
+
+                                                            <td>Groundbrea</td>
+
+                                                            <td>N/A</td>
+
+                                                          </tr>
+
+                                                          <tr>
+
+                                                            <td>Dedicated</td>
+
+                                                            <td>N/A</td>
+
+                                                          </tr>
+
+                                                          <tr bgcolor="#D4E4F3">
+
+                                                            <td>Historical</td>
+
+                                                            <td>Will be first temple in France.</td>
+
+                                                          </tr>
+
+                                                          <tr>
+
+                                                            <td>Picture</td>
+
+                                                            <td></td>
+
+                                                          </tr>
+
+                                                        </table>
+
+                                                      </td>
+
+                                                    </tr>
+
+                                                  </table>
+
+                                                </body>
+
+                                              </html>
+
+                                              ]]></description>
+                                              <styleUrl>#IconStyle00</styleUrl>
+                                              <Point>
+                                                <altitudeMode>clampToGround</altitudeMode>
+                                                <coordinates> 2.12324164000006,48.81788962300004,0</coordinates>
+                                              </Point>
+                                            </Placemark>
+                                            <Placemark id="ID_00010">
+                                              <name>Madrid Spain Temple</name>
+                                              <Snippet><![CDATA[ ]]></Snippet>
+                                              <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+                                                <head>
+
+                                                  <META http-equiv="Content-Type" content="text/html">
+
+                                                    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+                                                    </head>
+
+                                                    <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+                                                      <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+                                                        <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+                                                          <td>Madrid Spain Temple</td>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                          <td>
+
+                                                            <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+                                                              <tr>
+
+                                                                <td>FID</td>
+
+                                                                <td>10</td>
+
+                                                              </tr>
+
+                                                              <tr bgcolor="#D4E4F3">
+
+                                                                <td>OID_</td>
+
+                                                                <td>0</td>
+
+                                                              </tr>
+
+                                                              <tr>
+
+                                                                <td>Name</td>
+
+                                                                <td>Madrid Spain Temple</td>
+
+                                                              </tr>
+
+                                                              <tr bgcolor="#D4E4F3">
+
+                                                                <td>FolderPath</td>
+
+                                                                <td>Temples.kml/Temples</td>
+
+                                                              </tr>
+
+                                                              <tr>
+
+                                                                <td>SymbolID</td>
+
+                                                                <td>0</td>
+
+                                                              </tr>
+
+                                                              <tr bgcolor="#D4E4F3">
+
+                                                                <td>AltMode</td>
+
+                                                                <td>-1</td>
+
+                                                              </tr>
+
+                                                              <tr>
+
+                                                                <td>Base</td>
+
+                                                                <td>0</td>
+
+                                                              </tr>
+
+                                                              <tr bgcolor="#D4E4F3">
+
+                                                                <td>Snippet</td>
+
+                                                                <td></td>
+
+                                                              </tr>
+
+                                                              <tr>
+
+                                                                <td>PopupInfo</td>
+
+                                                                <td></td>
+
+                                                              </tr>
+
+                                                              <tr bgcolor="#D4E4F3">
+
+                                                                <td>HasLabel</td>
+
+                                                                <td>-1</td>
+
+                                                              </tr>
+
+                                                              <tr>
+
+                                                                <td>LabelID</td>
+
+                                                                <td>0</td>
+
+                                                              </tr>
+
+                                                              <tr bgcolor="#D4E4F3">
+
+                                                                <td>Status_1</td>
+
+                                                                <td>Operating</td>
+
+                                                              </tr>
+
+                                                              <tr>
+
+                                                                <td>Announce</td>
+
+                                                                <td>April 4, 1993</td>
+
+                                                              </tr>
+
+                                                              <tr bgcolor="#D4E4F3">
+
+                                                                <td>Groundbrea</td>
+
+                                                                <td>June 11, 1996</td>
+
+                                                              </tr>
+
+                                                              <tr>
+
+                                                                <td>Dedicated</td>
+
+                                                                <td>March 19, 1999</td>
+
+                                                              </tr>
+
+                                                              <tr bgcolor="#D4E4F3">
+
+                                                                <td>Historical</td>
+
+                                                                <td>First temple built in Spain.</td>
+
+                                                              </tr>
+
+                                                              <tr>
+
+                                                                <td>Picture</td>
+
+                                                                <td></td>
+
+                                                              </tr>
+
+                                                            </table>
+
+                                                          </td>
+
+                                                        </tr>
+
+                                                      </table>
+
+                                                    </body>
+
+                                                  </html>
+
+                                                  ]]></description>
+                                                  <styleUrl>#IconStyle00</styleUrl>
+                                                  <Point>
+                                                    <altitudeMode>clampToGround</altitudeMode>
+                                                    <coordinates> -3.63159544499996,40.40009851500003,0</coordinates>
+                                                  </Point>
+                                                </Placemark>
+                                                <Placemark id="ID_00011">
+                                                  <name>Lisbon Portugal Temple</name>
+                                                  <Snippet><![CDATA[ ]]></Snippet>
+                                                  <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+                                                    <head>
+
+                                                      <META http-equiv="Content-Type" content="text/html">
+
+                                                        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+                                                        </head>
+
+                                                        <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+                                                          <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+                                                            <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+                                                              <td>Lisbon Portugal Temple</td>
+
+                                                            </tr>
+
+                                                            <tr>
+
+                                                              <td>
+
+                                                                <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+                                                                  <tr>
+
+                                                                    <td>FID</td>
+
+                                                                    <td>11</td>
+
+                                                                  </tr>
+
+                                                                  <tr bgcolor="#D4E4F3">
+
+                                                                    <td>OID_</td>
+
+                                                                    <td>0</td>
+
+                                                                  </tr>
+
+                                                                  <tr>
+
+                                                                    <td>Name</td>
+
+                                                                    <td>Lisbon Portugal Temple</td>
+
+                                                                  </tr>
+
+                                                                  <tr bgcolor="#D4E4F3">
+
+                                                                    <td>FolderPath</td>
+
+                                                                    <td>Temples.kml/Temples</td>
+
+                                                                  </tr>
+
+                                                                  <tr>
+
+                                                                    <td>SymbolID</td>
+
+                                                                    <td>0</td>
+
+                                                                  </tr>
+
+                                                                  <tr bgcolor="#D4E4F3">
+
+                                                                    <td>AltMode</td>
+
+                                                                    <td>-1</td>
+
+                                                                  </tr>
+
+                                                                  <tr>
+
+                                                                    <td>Base</td>
+
+                                                                    <td>0</td>
+
+                                                                  </tr>
+
+                                                                  <tr bgcolor="#D4E4F3">
+
+                                                                    <td>Snippet</td>
+
+                                                                    <td></td>
+
+                                                                  </tr>
+
+                                                                  <tr>
+
+                                                                    <td>PopupInfo</td>
+
+                                                                    <td></td>
+
+                                                                  </tr>
+
+                                                                  <tr bgcolor="#D4E4F3">
+
+                                                                    <td>HasLabel</td>
+
+                                                                    <td>-1</td>
+
+                                                                  </tr>
+
+                                                                  <tr>
+
+                                                                    <td>LabelID</td>
+
+                                                                    <td>0</td>
+
+                                                                  </tr>
+
+                                                                  <tr bgcolor="#D4E4F3">
+
+                                                                    <td>Status_1</td>
+
+                                                                    <td>Announced</td>
+
+                                                                  </tr>
+
+                                                                  <tr>
+
+                                                                    <td>Announce</td>
+
+                                                                    <td>October 2, 2010</td>
+
+                                                                  </tr>
+
+                                                                  <tr bgcolor="#D4E4F3">
+
+                                                                    <td>Groundbrea</td>
+
+                                                                    <td>N/A</td>
+
+                                                                  </tr>
+
+                                                                  <tr>
+
+                                                                    <td>Dedicated</td>
+
+                                                                    <td>N/A</td>
+
+                                                                  </tr>
+
+                                                                  <tr bgcolor="#D4E4F3">
+
+                                                                    <td>Historical</td>
+
+                                                                    <td>First temple built in Portugal.</td>
+
+                                                                  </tr>
+
+                                                                  <tr>
+
+                                                                    <td>Picture</td>
+
+                                                                    <td></td>
+
+                                                                  </tr>
+
+                                                                </table>
+
+                                                              </td>
+
+                                                            </tr>
+
+                                                          </table>
+
+                                                        </body>
+
+                                                      </html>
+
+                                                      ]]></description>
+                                                      <styleUrl>#IconStyle00</styleUrl>
+                                                      <Point>
+                                                        <altitudeMode>clampToGround</altitudeMode>
+                                                        <coordinates> -9.140137276999951,38.72084501200004,0</coordinates>
+                                                      </Point>
+                                                    </Placemark>
+                                                    <Placemark id="ID_00012">
+                                                      <name>Rome Italy Temple</name>
+                                                      <Snippet><![CDATA[ ]]></Snippet>
+                                                      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+                                                        <head>
+
+                                                          <META http-equiv="Content-Type" content="text/html">
+
+                                                            <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+                                                            </head>
+
+                                                            <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+                                                              <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+                                                                <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+                                                                  <td>Rome Italy Temple</td>
+
+                                                                </tr>
+
+                                                                <tr>
+
+                                                                  <td>
+
+                                                                    <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+                                                                      <tr>
+
+                                                                        <td>FID</td>
+
+                                                                        <td>12</td>
+
+                                                                      </tr>
+
+                                                                      <tr bgcolor="#D4E4F3">
+
+                                                                        <td>OID_</td>
+
+                                                                        <td>0</td>
+
+                                                                      </tr>
+
+                                                                      <tr>
+
+                                                                        <td>Name</td>
+
+                                                                        <td>Rome Italy Temple</td>
+
+                                                                      </tr>
+
+                                                                      <tr bgcolor="#D4E4F3">
+
+                                                                        <td>FolderPath</td>
+
+                                                                        <td>Temples.kml/Temples</td>
+
+                                                                      </tr>
+
+                                                                      <tr>
+
+                                                                        <td>SymbolID</td>
+
+                                                                        <td>0</td>
+
+                                                                      </tr>
+
+                                                                      <tr bgcolor="#D4E4F3">
+
+                                                                        <td>AltMode</td>
+
+                                                                        <td>-1</td>
+
+                                                                      </tr>
+
+                                                                      <tr>
+
+                                                                        <td>Base</td>
+
+                                                                        <td>0</td>
+
+                                                                      </tr>
+
+                                                                      <tr bgcolor="#D4E4F3">
+
+                                                                        <td>Snippet</td>
+
+                                                                        <td></td>
+
+                                                                      </tr>
+
+                                                                      <tr>
+
+                                                                        <td>PopupInfo</td>
+
+                                                                        <td></td>
+
+                                                                      </tr>
+
+                                                                      <tr bgcolor="#D4E4F3">
+
+                                                                        <td>HasLabel</td>
+
+                                                                        <td>-1</td>
+
+                                                                      </tr>
+
+                                                                      <tr>
+
+                                                                        <td>LabelID</td>
+
+                                                                        <td>0</td>
+
+                                                                      </tr>
+
+                                                                      <tr bgcolor="#D4E4F3">
+
+                                                                        <td>Status_1</td>
+
+                                                                        <td>Under Construction</td>
+
+                                                                      </tr>
+
+                                                                      <tr>
+
+                                                                        <td>Announce</td>
+
+                                                                        <td>October 4, 2008</td>
+
+                                                                      </tr>
+
+                                                                      <tr bgcolor="#D4E4F3">
+
+                                                                        <td>Groundbrea</td>
+
+                                                                        <td>October 23, 2010</td>
+
+                                                                      </tr>
+
+                                                                      <tr>
+
+                                                                        <td>Dedicated</td>
+
+                                                                        <td>N/A</td>
+
+                                                                      </tr>
+
+                                                                      <tr bgcolor="#D4E4F3">
+
+                                                                        <td>Historical</td>
+
+                                                                        <td>First temple in Italy.</td>
+
+                                                                      </tr>
+
+                                                                      <tr>
+
+                                                                        <td>Picture</td>
+
+                                                                        <td></td>
+
+                                                                      </tr>
+
+                                                                    </table>
+
+                                                                  </td>
+
+                                                                </tr>
+
+                                                              </table>
+
+                                                            </body>
+
+                                                          </html>
+
+                                                          ]]></description>
+                                                          <styleUrl>#IconStyle00</styleUrl>
+                                                          <Point>
+                                                            <altitudeMode>clampToGround</altitudeMode>
+                                                            <coordinates> 12.54481738200008,41.96991861500004,0</coordinates>
+                                                          </Point>
+                                                        </Placemark>
+                                                        <Placemark id="ID_00013">
+                                                          <name>Kyiv Ukraine Temple</name>
+                                                          <Snippet><![CDATA[ ]]></Snippet>
+                                                          <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+                                                            <head>
+
+                                                              <META http-equiv="Content-Type" content="text/html">
+
+                                                                <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+                                                                </head>
+
+                                                                <body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+                                                                  <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+                                                                    <tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+                                                                      <td>Kyiv Ukraine Temple</td>
+
+                                                                    </tr>
+
+                                                                    <tr>
+
+                                                                      <td>
+
+                                                                        <table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+                                                                          <tr>
+
+                                                                            <td>FID</td>
+
+                                                                            <td>13</td>
+
+                                                                          </tr>
+
+                                                                          <tr bgcolor="#D4E4F3">
+
+                                                                            <td>OID_</td>
+
+                                                                            <td>0</td>
+
+                                                                          </tr>
+
+                                                                          <tr>
+
+                                                                            <td>Name</td>
+
+                                                                            <td>Kyiv Ukraine Temple</td>
+
+                                                                          </tr>
+
+                                                                          <tr bgcolor="#D4E4F3">
+
+                                                                            <td>FolderPath</td>
+
+                                                                            <td>Temples.kml/Temples</td>
+
+                                                                          </tr>
+
+                                                                          <tr>
+
+                                                                            <td>SymbolID</td>
+
+                                                                            <td>0</td>
+
+                                                                          </tr>
+
+                                                                          <tr bgcolor="#D4E4F3">
+
+                                                                            <td>AltMode</td>
+
+                                                                            <td>-1</td>
+
+                                                                          </tr>
+
+                                                                          <tr>
+
+                                                                            <td>Base</td>
+
+                                                                            <td>0</td>
+
+                                                                          </tr>
+
+                                                                          <tr bgcolor="#D4E4F3">
+
+                                                                            <td>Snippet</td>
+
+                                                                            <td></td>
+
+                                                                          </tr>
+
+                                                                          <tr>
+
+                                                                            <td>PopupInfo</td>
+
+                                                                            <td></td>
+
+                                                                          </tr>
+
+                                                                          <tr bgcolor="#D4E4F3">
+
+                                                                            <td>HasLabel</td>
+
+                                                                            <td>-1</td>
+
+                                                                          </tr>
+
+                                                                          <tr>
+
+                                                                            <td>LabelID</td>
+
+                                                                            <td>0</td>
+
+                                                                          </tr>
+
+                                                                          <tr bgcolor="#D4E4F3">
+
+                                                                            <td>Status_1</td>
+
+                                                                            <td>Operating</td>
+
+                                                                          </tr>
+
+                                                                          <tr>
+
+                                                                            <td>Announce</td>
+
+                                                                            <td>July 20, 1998</td>
+
+                                                                          </tr>
+
+                                                                          <tr bgcolor="#D4E4F3">
+
+                                                                            <td>Groundbrea</td>
+
+                                                                            <td>June 23, 2007</td>
+
+                                                                          </tr>
+
+                                                                          <tr>
+
+                                                                            <td>Dedicated</td>
+
+                                                                            <td>August 29, 1010</td>
+
+                                                                          </tr>
+
+                                                                          <tr bgcolor="#D4E4F3">
+
+                                                                            <td>Historical</td>
+
+                                                                            <td>First temple in the former Soviet Union and in Ukraine.  First in Eastern Europe.</td>
+
+                                                                          </tr>
+
+                                                                          <tr>
+
+                                                                            <td>Picture</td>
+
+                                                                            <td></td>
+
+                                                                          </tr>
+
+                                                                        </table>
+
+                                                                      </td>
+
+                                                                    </tr>
+
+                                                                  </table>
+
+                                                                </body>
+
+                                                              </html>
+
+                                                              ]]></description>
+                                                              <styleUrl>#IconStyle00</styleUrl>
+                                                              <Point>
+                                                                <altitudeMode>clampToGround</altitudeMode>
+                                                                <coordinates> 30.39525900000007,50.40464800000007,0</coordinates>
+                                                              </Point>
+                                                            </Placemark>
+                                                          </Folder>
+                                                          <Style id="IconStyle00">
+                                                            <IconStyle>
+                                                              <Icon><href>kml/church.png</href></Icon>
+                                                              <scale>1.750000</scale>
+                                                            </IconStyle>
+                                                            <LabelStyle>
+                                                              <color>ffffffff</color>
+                                                              <scale>0.833333</scale>
+                                                            </LabelStyle>
+                                                            <PolyStyle>
+                                                              <color>ff000000</color>
+                                                              <outline>0</outline>
+                                                            </PolyStyle>
+                                                          </Style>
+                                                        </Document>
+                                                      </kml>

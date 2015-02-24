@@ -15,7 +15,7 @@ var raster = new ol.layer.Tile({
 var mtc = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
-    url: 'kml/doc.kml'
+    url: 'kml/mtc.kml'
   })
 });
 
@@ -23,7 +23,7 @@ var mtc = new ol.layer.Vector({
 var temples = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
-    url: 'kml/temples_try.kml'
+    url: 'kml/temples.kml'
   })
 });
 
