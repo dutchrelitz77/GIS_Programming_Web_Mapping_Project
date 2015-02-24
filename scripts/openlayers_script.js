@@ -15,7 +15,7 @@ var raster = new ol.layer.Tile({
 var mtc = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
-    url: 'kml/MTCEurope_try.kml'
+    url: 'kml/doc.kml'
   })
 });
 
