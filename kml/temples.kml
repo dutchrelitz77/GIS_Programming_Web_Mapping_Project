@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document id="Temples.kml">
   <name>Temples.kml</name>
   <Snippet></Snippet>
@@ -9,16 +8,26 @@
     <Snippet></Snippet>
     <Placemark id="ID_00000">
       <name>Preston England Temple</name>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-</head>
-<body>
-<table>
-<tr><td style="white-space: nowrap;"></td></tr>
-</table>
-</body>
-</html>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+</head>
+
+<body>
+
+<table>
+
+<tr><td style="white-space: nowrap;"></td></tr>
+
+</table>
+
+</body>
+
+</html>
+
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
@@ -28,16 +37,26 @@
     </Placemark>
     <Placemark id="ID_00001">
       <name>London Temple</name>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-</head>
-<body>
-<table>
-<tr><td style="white-space: nowrap;"></td></tr>
-</table>
-</body>
-</html>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+</head>
+
+<body>
+
+<table>
+
+<tr><td style="white-space: nowrap;"></td></tr>
+
+</table>
+
+</body>
+
+</html>
+
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
@@ -47,16 +66,26 @@
     </Placemark>
     <Placemark id="ID_00002">
       <name>Stockholm Sweden Temple</name>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-</head>
-<body>
-<table>
-<tr><td style="white-space: nowrap;"></td></tr>
-</table>
-</body>
-</html>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+</head>
+
+<body>
+
+<table>
+
+<tr><td style="white-space: nowrap;"></td></tr>
+
+</table>
+
+</body>
+
+</html>
+
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
@@ -66,16 +95,26 @@
     </Placemark>
     <Placemark id="ID_00003">
       <name>Helsinki Finland Temple</name>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-</head>
-<body>
-<table>
-<tr><td style="white-space: nowrap;"></td></tr>
-</table>
-</body>
-</html>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+</head>
+
+<body>
+
+<table>
+
+<tr><td style="white-space: nowrap;"></td></tr>
+
+</table>
+
+</body>
+
+</html>
+
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
@@ -85,16 +124,26 @@
     </Placemark>
     <Placemark id="ID_00004">
       <name>Copenhagen Denmark Temple</name>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-</head>
-<body>
-<table>
-<tr><td style="white-space: nowrap;"></td></tr>
-</table>
-</body>
-</html>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+</head>
+
+<body>
+
+<table>
+
+<tr><td style="white-space: nowrap;"></td></tr>
+
+</table>
+
+</body>
+
+</html>
+
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
@@ -104,16 +153,26 @@
     </Placemark>
     <Placemark id="ID_00005">
       <name>The Hague Netherlands Temple</name>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-</head>
-<body>
-<table>
-<tr><td style="white-space: nowrap;"></td></tr>
-</table>
-</body>
-</html>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+</head>
+
+<body>
+
+<table>
+
+<tr><td style="white-space: nowrap;"></td></tr>
+
+</table>
+
+</body>
+
+</html>
+
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
@@ -123,16 +182,26 @@
     </Placemark>
     <Placemark id="ID_00006">
       <name>Freiberg Germany Temple</name>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-</head>
-<body>
-<table>
-<tr><td style="white-space: nowrap;"></td></tr>
-</table>
-</body>
-</html>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+</head>
+
+<body>
+
+<table>
+
+<tr><td style="white-space: nowrap;"></td></tr>
+
+</table>
+
+</body>
+
+</html>
+
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
@@ -142,16 +211,26 @@
     </Placemark>
     <Placemark id="ID_00007">
       <name>Frankfurt Germany Temple</name>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-</head>
-<body>
-<table>
-<tr><td style="white-space: nowrap;"></td></tr>
-</table>
-</body>
-</html>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+</head>
+
+<body>
+
+<table>
+
+<tr><td style="white-space: nowrap;"></td></tr>
+
+</table>
+
+</body>
+
+</html>
+
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
@@ -161,16 +240,26 @@
     </Placemark>
     <Placemark id="ID_00008">
       <name>Bern Switzerland Temple</name>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-</head>
-<body>
-<table>
-<tr><td style="white-space: nowrap;"></td></tr>
-</table>
-</body>
-</html>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+</head>
+
+<body>
+
+<table>
+
+<tr><td style="white-space: nowrap;"></td></tr>
+
+</table>
+
+</body>
+
+</html>
+
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
@@ -180,16 +269,26 @@
     </Placemark>
     <Placemark id="ID_00009">
       <name>Paris France Temple</name>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-</head>
-<body>
-<table>
-<tr><td style="white-space: nowrap;"></td></tr>
-</table>
-</body>
-</html>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+</head>
+
+<body>
+
+<table>
+
+<tr><td style="white-space: nowrap;"></td></tr>
+
+</table>
+
+</body>
+
+</html>
+
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
@@ -199,16 +298,26 @@
     </Placemark>
     <Placemark id="ID_00010">
       <name>Madrid Spain Temple</name>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-</head>
-<body>
-<table>
-<tr><td style="white-space: nowrap;"></td></tr>
-</table>
-</body>
-</html>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+</head>
+
+<body>
+
+<table>
+
+<tr><td style="white-space: nowrap;"></td></tr>
+
+</table>
+
+</body>
+
+</html>
+
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
@@ -218,16 +327,26 @@
     </Placemark>
     <Placemark id="ID_00011">
       <name>Lisbon Portugal Temple</name>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-</head>
-<body>
-<table>
-<tr><td style="white-space: nowrap;"></td></tr>
-</table>
-</body>
-</html>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+</head>
+
+<body>
+
+<table>
+
+<tr><td style="white-space: nowrap;"></td></tr>
+
+</table>
+
+</body>
+
+</html>
+
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
@@ -237,16 +356,26 @@
     </Placemark>
     <Placemark id="ID_00012">
       <name>Rome Italy Temple</name>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-</head>
-<body>
-<table>
-<tr><td style="white-space: nowrap;"></td></tr>
-</table>
-</body>
-</html>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+</head>
+
+<body>
+
+<table>
+
+<tr><td style="white-space: nowrap;"></td></tr>
+
+</table>
+
+</body>
+
+</html>
+
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
@@ -256,16 +385,26 @@
     </Placemark>
     <Placemark id="ID_00013">
       <name>Kyiv Ukraine Temple</name>
-      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-<head>
-<META http-equiv="Content-Type" content="text/html">
-</head>
-<body>
-<table>
-<tr><td style="white-space: nowrap;"></td></tr>
-</table>
-</body>
-</html>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+</head>
+
+<body>
+
+<table>
+
+<tr><td style="white-space: nowrap;"></td></tr>
+
+</table>
+
+</body>
+
+</html>
+
 ]]></description>
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
@@ -276,7 +415,7 @@
   </Folder>
   <Style id="IconStyle00">
     <IconStyle>
-      <Icon><href>Layer0_Symbol_dc623f0.png</href></Icon>
+      <Icon><href>temple.png</href></Icon>
       <scale>1.625000</scale>
     </IconStyle>
     <LabelStyle>
