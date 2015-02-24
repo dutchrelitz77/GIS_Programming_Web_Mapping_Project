@@ -1,6 +1,29 @@
 // Create projection
 var projection = ol.proj.get('EPSG:3857');
 
+// Elements that make the popup
+var container = document.getElementById('popup');
+var content = document.getElementById('popup-content');
+var closer = document.getElementById('popup-closer');
+
+/**
+ * Add a click handler to hide the popup.
+ * @return {boolean} Don't follow the href.
+ */
+closer.onclick = function() {
+  overlay.setPosition(undefined);
+  closer.blur();
+  return false;
+};
+
+/**
+ * Create an overlay to anchor the popup to the map.
+ */
+var overlay = new ol.Overlay({
+  element: container
+});
+
+
 /* Add all layers to map */
 
 // Create bing raster layer
@@ -36,9 +59,23 @@ var temples = new ol.layer.Vector({
 var map = new ol.Map({
   layers: [raster, mtc, temples],
   target: document.getElementById('map'),
+  overlays: [overlay],
   view: new ol.View({
     center: [876970.8463461736, 5859807.853963373],
     projection: projection,
     zoom: 4
   })
+});
+
+/**
+ * Add a click handler to the map to render the popup.
+ */
+map.on('click', function(evt) {
+  var coordinate = evt.coordinate;
+  var hdms = ol.coordinate.toStringHDMS(ol.proj.transform(
+      coordinate, 'EPSG:3857', 'EPSG:4326'));
+
+  content.innerHTML = '<p>You clicked here:</p><code>' + hdms +
+      '</code>';
+  overlay.setPosition(coordinate);
 });
