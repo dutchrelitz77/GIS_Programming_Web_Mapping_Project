@@ -23,7 +23,7 @@ var mtc = new ol.layer.Vector({
 var temples = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
-    url: 'kml/temples.kml'
+    url: 'kml/temples_try.kml'
   })
 });
 
