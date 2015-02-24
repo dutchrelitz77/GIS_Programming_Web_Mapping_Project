@@ -2,28 +2,15 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
 <Document id="mtc">
-  <name>mtc.kml</name>
-      <Style id="IconStyle00">
-        <IconStyle>
-          <Icon><href>kml/point.png</href></Icon>
-          <scale>0.250000</scale>
-        </IconStyle>
-        <LabelStyle>
-          <color>00000000</color>
-          <scale>0.000000</scale>
-        </LabelStyle>
-        <PolyStyle>
-          <color>ff000000</color>
-          <outline>0</outline>
-        </PolyStyle>
-      </Style>
-      <Folder id="FeatureLayer0">
-        <name>mtc</name>
-        <Snippet></Snippet>
-        <Placemark id="ID_00000">
-          <name>0</name>
-        <Snippet></Snippet>
-        <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+  <name>mtc</name>
+  <Snippet></Snippet>
+  <Folder id="FeatureLayer0">
+    <name>mtc</name>
+    <Snippet></Snippet>
+    <Placemark id="ID_00000">
+      <name>0</name>
+      <Snippet></Snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 
 <head>
 
@@ -93,5 +80,19 @@
       </Point>
     </Placemark>
   </Folder>
+  <Style id="IconStyle00">
+    <IconStyle>
+      <Icon><href>kml/point.png</href></Icon>
+      <scale>10</scale>
+    </IconStyle>
+    <LabelStyle>
+      <color>00000000</color>
+      <scale>0.000000</scale>
+    </LabelStyle>
+    <PolyStyle>
+      <color>ff000000</color>
+      <outline>0</outline>
+    </PolyStyle>
+  </Style>
 </Document>
 </kml>
