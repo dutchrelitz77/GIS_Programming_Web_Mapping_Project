@@ -82,7 +82,7 @@
   </Folder>
   <Style id="IconStyle00">
     <IconStyle>
-      <Icon><href>kml/Layer0_Symbol_50489a0.png</href></Icon>
+      <Icon><href>kml/point.png</href></Icon>
       <scale>0.250000</scale>
     </IconStyle>
     <LabelStyle>
