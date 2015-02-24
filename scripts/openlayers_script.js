@@ -42,6 +42,18 @@ var temples = new ol.layer.Vector({
 
 // Initialize map
 var map = new ol.Map({
+  controls: ol.control.defaults({
+    attributionOptions: /** @type {olx.control.AttributionOptions} */ ({
+      collapsible: false
+    })
+  }).extend([
+    new ol.control.ZoomToExtent({
+      extent: [
+        813079.7791264898, 5929220.284081122,
+        848966.9639063801, 5936863.986909639
+      ]
+    })
+  ]),
   layers: [raster, mtc, temples],
   target: document.getElementById('map'),
   renderer: exampleNS.getRendererFromQueryString(),
