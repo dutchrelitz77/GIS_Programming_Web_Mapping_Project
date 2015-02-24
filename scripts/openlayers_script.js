@@ -19,11 +19,14 @@ var mtc = new ol.layer.Vector({
   })
 });
 
-// Add Temples layer
+/* Add all Temple layers */
+
+
+// London temple layer
 var temples = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
-    url: 'kml/temples.kml'
+    url: 'kml/londonTemple.kml'
   })
 });
 
