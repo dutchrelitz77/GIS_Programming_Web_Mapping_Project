@@ -29,7 +29,7 @@
         <value>September 9, 1958</value>                <!-- string -->
       </Data>
       <Data name="Historical">
-         <value>This was the first temple built in the United Kingdom.</value>
+         <value>pictures/london_temple.jpg</value>
       </Data>
       </ExtendedData>
       
