@@ -1,9 +1,5 @@
 /* Styling for openlayers popup boxes */
 
-.popup {
-	width: 200px;
-}
-
 /*.ol-popup {
 	position: absolute;
 	background-color: white;

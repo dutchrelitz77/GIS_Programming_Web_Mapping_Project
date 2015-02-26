@@ -29,7 +29,7 @@
         <value>September 9, 1958</value>                <!-- string -->
       </Data>
       <Data name="Historical">
-         <value>pictures/london_temple.jpg</value>
+         <value>http://map.ldschurcheuropegis.info/pictures/london_temple.jpg</value>
       </Data>
       </ExtendedData>
       
