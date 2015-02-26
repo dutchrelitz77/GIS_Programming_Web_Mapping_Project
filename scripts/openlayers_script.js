@@ -23,18 +23,113 @@ var mtc = new ol.layer.Vector({
 
 /* Add all Temple layers */
 
-
 // London temple layer
-var temples = new ol.layer.Vector({
+var bernTemple = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
-    url: 'kml/londonTemple.kml'
+    url: 'kml/temples/bernTemple.kml'
+  })
+});
+
+// London temple layer
+var denmarkTemple = new ol.layer.Vector({
+  source: new ol.source.KML({
+    projection: projection,
+    url: 'kml/temples/denmarkTemple.kml'
+  })
+});
+
+// London temple layer
+var finlandTemple = new ol.layer.Vector({
+  source: new ol.source.KML({
+    projection: projection,
+    url: 'kml/temples/finlandTemple.kml'
+  })
+});
+
+// London temple layer
+var frankfurtTemple = new ol.layer.Vector({
+  source: new ol.source.KML({
+    projection: projection,
+    url: 'kml/temples/frankfurtTemple.kml'
+  })
+});
+
+// London temple layer
+var freibergTemple = new ol.layer.Vector({
+  source: new ol.source.KML({
+    projection: projection,
+    url: 'kml/temples/freibergTemple.kml'
+  })
+});
+
+// London temple layer
+var londonTemple = new ol.layer.Vector({
+  source: new ol.source.KML({
+    projection: projection,
+    url: 'kml/temples/londonTemple.kml'
+  })
+});
+
+// London temple layer
+var netherlandsTemple = new ol.layer.Vector({
+  source: new ol.source.KML({
+    projection: projection,
+    url: 'kml/temples/netherlandsTemple.kml'
+  })
+});
+
+// London temple layer
+var parisTemple = new ol.layer.Vector({
+  source: new ol.source.KML({
+    projection: projection,
+    url: 'kml/temples/parisTemple.kml'
+  })
+});
+
+// London temple layer
+var portugalTemple = new ol.layer.Vector({
+  source: new ol.source.KML({
+    projection: projection,
+    url: 'kml/temples/portugalTemple.kml'
+  })
+});
+
+// London temple layer
+var romeTemple = new ol.layer.Vector({
+  source: new ol.source.KML({
+    projection: projection,
+    url: 'kml/temples/romeTemple.kml'
+  })
+});
+
+// London temple layer
+var spainTemple = new ol.layer.Vector({
+  source: new ol.source.KML({
+    projection: projection,
+    url: 'kml/temples/spainTemple.kml'
+  })
+});
+
+// London temple layer
+var stockholmTemple = new ol.layer.Vector({
+  source: new ol.source.KML({
+    projection: projection,
+    url: 'kml/temples/stockholmTemple.kml'
+  })
+});
+
+// London temple layer
+var ukraineTemple = new ol.layer.Vector({
+  source: new ol.source.KML({
+    projection: projection,
+    url: 'kml/temples/ukraineTemple.kml'
   })
 });
 
 // Get layers extents
 
-/* Initialize the map and set the setting for it */
+/* Initialize the map and set up main settings */
 
 // Initialize map
 var map = new ol.Map({
@@ -50,7 +145,8 @@ var map = new ol.Map({
       ]
     })
   ]),
-  layers: [raster, mtc, temples],
+  layers: [raster, mtc, bernTemple, denmarkTemple, finlandTemple, frankfurtTemple, freibergTemple, 
+           londonTemple, netherlandsTemple, parisTemple, portugalTemple, romeTemple, spainTemple, stockholmTemple, ukraineTemple],
   target: document.getElementById('map'),
   renderer: exampleNS.getRendererFromQueryString(),
   view: new ol.View({
@@ -85,15 +181,29 @@ map.on('click', function(evt) {
     var geometry = feature.getGeometry();
     var coord = geometry.getCoordinates();
     popup.setPosition(coord);
-    var displaycontent = if (feature.get('type') == 'Temple') {
-      '<b>Temple Name:</b> ' + feature.get('name') + '<br><b>Status:</b> ' + feature.get('Status') 
-      + '<br><b>Historical Facts: </b> ' + feature.get('Historical') + '<br><b><img src="' 
-      + feature.get('Image') + '" height="200" width="200">';
+
+    var displaycontent = '';
+
+    if (feature.get('type') == 'Temple') {
+      displaycontent = '<b>Temple Name:</b> ' + feature.get('name') + '<br><b>Status:</b> ' + feature.get('Status') 
+                     + '<br><b>Historical Facts: </b> ' + feature.get('Historical') + '<br><b><img src="' 
+                     + feature.get('Image') + '" height="200" width="200">';
     } else if(feature.get('type') == 'MTC'){
-      '<b>Temple Name:</b> ' + feature.get('name') + '<br><b>Status:</b> ' + feature.get('Status') 
-      + '<br><b>Historical Facts: </b> ' + feature.get('Historical') + '<br><b><img src="' 
-      + feature.get('Image') + '" height="200" width="200">';
+      displaycontent = '<b>Temple Name:</b> ' + feature.get('name') + '<br><b>Status:</b> ' + feature.get('Status') 
+                     + '<br><b>Historical Facts: </b> ' + feature.get('Historical') + '<br><b><img src="' 
+                     + feature.get('Image') + '" height="200" width="200">';
+    } else if(feature.get('type') == 'Journey'){
+      displaycontent = '<b>Temple Name:</b> ' + feature.get('name') + '<br><b>Status:</b> ' + feature.get('Status') 
+                     + '<br><b>Historical Facts: </b> ' + feature.get('Historical') + '<br><b><img src="' 
+                     + feature.get('Image') + '" height="200" width="200">';
+    } else if(feature.get('type') == 'CountryData'){
+      displaycontent = '<b>Temple Name:</b> ' + feature.get('name') + '<br><b>Status:</b> ' + feature.get('Status') 
+                     + '<br><b>Historical Facts: </b> ' + feature.get('Historical') + '<br><b><img src="' 
+                     + feature.get('Image') + '" height="200" width="200">';
+    } else {
+      displaycontent = '';
     };
+
     $(element).popover({
       'placement': 'top',
       'html': true,
