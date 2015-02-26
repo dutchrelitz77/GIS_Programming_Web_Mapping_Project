@@ -6,10 +6,6 @@ var container = document.getElementById('popup');
 var content = document.getElementById('popup-content');
 var closer = document.getElementById('popup-closer');
 
-/**
- * Add a click handler to hide the popup.
- * @return {boolean} Don't follow the href.
- */
 closer.onclick = function() {
   overlay.setPosition(undefined);
   closer.blur();
@@ -73,7 +69,6 @@ var map = new ol.Map({
   layers: [raster, mtc, temples],
   overlays: [overlay],
   target: document.getElementById('map'),
-  renderer: exampleNS.getRendererFromQueryString(),
   view: new ol.View({
     center: [876970.8463461736, 5859807.853963373],
     projection: projection,
@@ -108,7 +103,7 @@ map.on('click', function(evt) {
     $(element).popover('show');
   
     } else {
-    $(element).popover('destroy');
+      $(element).popover('destroy');
     }
 });
 
