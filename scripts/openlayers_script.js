@@ -1,7 +1,27 @@
 // Create projection
 var projection = ol.proj.get('EPSG:3857');
 
-/* Elements  */
+// Elements that make up the popup
+var container = document.getElementById('popup');
+var content = document.getElementById('popup-content');
+var closer = document.getElementById('popup-closer');
+
+/**
+ * Add a click handler to hide the popup.
+ * @return {boolean} Don't follow the href.
+ */
+closer.onclick = function() {
+  overlay.setPosition(undefined);
+  closer.blur();
+  return false;
+};
+
+/**
+ * Create an overlay to anchor the popup to the map.
+ */
+var overlay = new ol.Overlay({
+  element: container
+});
 
 /* Add all layers to map */
 
@@ -32,7 +52,7 @@ var temples = new ol.layer.Vector({
   })
 });
 
-// Get layers extents
+// Get layers extents - add code here
 
 /* Initialize the map and set the setting for it */
 
@@ -51,6 +71,7 @@ var map = new ol.Map({
     })
   ]),
   layers: [raster, mtc, temples],
+  overlays: [overlay],
   target: document.getElementById('map'),
   renderer: exampleNS.getRendererFromQueryString(),
   view: new ol.View({
@@ -59,53 +80,104 @@ var map = new ol.Map({
     zoom: 4
   })
 });
-var element = document.getElementById('popup');
 
-    var popup = new ol.Overlay({
-      element: element,
-      positioning: 'bottom-center',
-      stopEvent: false
+// Event to click on the popups
+
+map.on('click', function(evt) {
+  //try to destroy it before doing anything else...s
+  $(element).popover('destroy');
+  
+  //Try to get a feature at the point of interest
+  var feature = map.forEachFeatureAtPixel(evt.pixel,
+    function(feature, layer) {
+    return feature;
     });
-    map.addOverlay(popup);
-
-    // display popup on click
     
-    map.on('click', function(evt) {
-      //try to destroy it before doing anything else...s
-      $(element).popover('destroy');
-      
-      //Try to get a feature at the point of interest
-      var feature = map.forEachFeatureAtPixel(evt.pixel,
-        function(feature, layer) {
-        return feature;
-        });
-        
-      //if we found a feature then create and show the popup.
-      if (feature) {
-      var geometry = feature.getGeometry();
-      var coord = geometry.getCoordinates();
-      popup.setPosition(coord);
-      var displaycontent = '<b>Owner:</b> ' + feature.get('name') + '<br><b>License:</b> ' + feature.get('Status');
-      $(element).popover({
-        'placement': 'top',
-        'html': true,
-        'content': displaycontent
-      });
-      
-      $(element).popover('show');
-      
-      } else {
-      $(element).popover('destroy');
-      }
+  //if we found a feature then create and show the popup.
+  if (feature) {
+    var geometry = feature.getGeometry();
+    var coord = geometry.getCoordinates();
+    overlay.setPosition(coord);
+    var displaycontent = '<b>Owner:</b> ' + feature.get('name') + '<br><b>License:</b> ' + feature.get('Status');
+    $(element).popover({
+      'placement': 'top',
+      'html': true,
+      'content': displaycontent
     });
+  
+    $(element).popover('show');
+  
+    } else {
+    $(element).popover('destroy');
+    }
+});
 
-    // change mouse cursor when over marker
-    map.on('pointermove', function(e) {
-      if (e.dragging) {
-      $(element).popover('destroy');
-      return;
-      }
-      var pixel = map.getEventPixel(e.originalEvent);
-      var hit = map.hasFeatureAtPixel(pixel);
-      map.getTarget().style.cursor = hit ? 'pointer' : '';
-    });
+// map.on('click', function(evt) {
+//   //try to destroy it before doing anything else...s
+//   //$(element).popover('destroy');
+  
+//   //Try to get a feature at the point of interest
+//   var feature = map.forEachFeatureAtPixel(evt.pixel,
+//     function(feature, layer) {
+//     return feature;
+//     });
+    
+//   //if we found a feature then create and show the popup.
+//   if (feature) {
+//   var geometry = feature.getGeometry();
+//   var coord = geometry.getCoordinates();
+//   overlay.setPosition(coord);
+//   var displaycontent = feature.get('description');
+//   content.innerHTML = displaycontent;
+//   }
+// });
+
+
+// var popup = new ol.Overlay({
+//   element: element,
+//   positioning: 'bottom-center',
+//   stopEvent: false
+// });
+// map.addOverlay(popup);
+
+// // display popup on click
+
+// map.on('click', function(evt) {
+//   //try to destroy it before doing anything else...s
+//   $(element).popover('destroy');
+  
+//   //Try to get a feature at the point of interest
+//   var feature = map.forEachFeatureAtPixel(evt.pixel,
+//     function(feature, layer) {
+//     return feature;
+//     });
+    
+//   //if we found a feature then create and show the popup.
+//   if (feature) {
+//   var geometry = feature.getGeometry();
+//   var coord = geometry.getCoordinates();
+//   popup.setPosition(coord);
+//   var displaycontent = '<b>Owner:</b> ' + feature.get('name') + '<br><b>License:</b> ' + feature.get('Status');
+//   $(element).popover({
+//     'placement': 'top',
+//     'html': true,
+//     'content': displaycontent
+//   });
+  
+//   $(element).popover('show');
+  
+//   } else {
+//   $(element).popover('destroy');
+//   }
+// });
+
+// // change mouse cursor when over marker
+// map.on('pointermove', function(e) {
+//   if (e.dragging) {
+//   $(element).popover('destroy');
+//   return;
+//   }
+//   var pixel = map.getEventPixel(e.originalEvent);
+//   var hit = map.hasFeatureAtPixel(pixel);
+//   map.getTarget().style.cursor = hit ? 'pointer' : '';
+// });
