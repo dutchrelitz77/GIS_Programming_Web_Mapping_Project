@@ -184,11 +184,12 @@ map.on('click', function(evt) {
 
     var displaycontent = '';
 
+    // if function for four KML files and their HTML styling for popup box
     if (feature.get('type') == 'Temple') {
       displaycontent = '<b>Temple Name:</b> ' + feature.get('name') + '<br><b>Status:</b> ' + feature.get('Status') 
                      + '<br><b>Historical Facts: </b> ' + feature.get('Historical') + '<br><b><img src="' 
                      + feature.get('Image') + '" height="200" width="200">' + '<br><a href="' + feature.get('website') 
-                     + '">Click Here for more info</a>';
+                     + '" target="_blank">Click Here for more info</a>';
     } else if(feature.get('type') == 'MTC'){
       displaycontent = '<b>Temple Name:</b> ' + feature.get('name') + '<br><b>Status:</b> ' + feature.get('Status') 
                      + '<br><b>Historical Facts: </b> ' + feature.get('Historical') + '<br><b><img src="' 
