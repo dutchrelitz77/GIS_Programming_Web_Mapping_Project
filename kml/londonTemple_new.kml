@@ -10,30 +10,32 @@
     <Placemark id="ID_00000">
       <name>London Temple</name>
       <Snippet></Snippet>
-      
+       
       <!-- Data values for temple points -->
       <ExtendedData>                       
       <Data name="Status">
-        <value>Operating</value>                <!-- string -->
+        <value>Operating</value>
       </Data>
       <Data name="Announcement">
          <value>August 10, 1953</value>
       </Data>
       <Data name="Image">
-        <value>blank image</value>                <!-- string -->
+        <value>http://map.ldschurcheuropegis.info/pictures/london_temple.jpg</value>
       </Data>
       <Data name="Groundbreaking">
          <value>August 27, 1955</value>
       </Data>
       <Data name="Dedicated">
-        <value>September 9, 1958</value>                <!-- string -->
+        <value>September 9, 1958</value>
       </Data>
       <Data name="Historical">
-         <value>http://map.ldschurcheuropegis.info/pictures/london_temple.jpg</value>
+         <value>This was the first temple built in the United Kingdom.</value>
+      </Data>
+      <Data name="website">
+         <value>http://www.ldschurchtemples.com/london/</value>
       </Data>
       </ExtendedData>
       
-
       <description>This is the temple sample KML file</description>
       
       <styleUrl>#IconStyle00</styleUrl>
