@@ -1,6 +1,8 @@
 // Create projection
 var projection = ol.proj.get('EPSG:3857');
 
+/* Elements  */
+
 /* Add all layers to map */
 
 // Create bing raster layer
@@ -57,56 +59,53 @@ var map = new ol.Map({
     zoom: 4
   })
 });
-
-// Popup setup
-
 var element = document.getElementById('popup');
 
-var popup = new ol.Overlay({
-  element: element,
-  positioning: 'bottom-center',
-  stopEvent: false
-});
-map.addOverlay(popup);
-
-// display popup on click
-
-map.on('click', function(evt) {
-  //try to destroy it before doing anything else...s
-  $(element).popover('destroy');
-  
-  //Try to get a feature at the point of interest
-  var feature = map.forEachFeatureAtPixel(evt.pixel,
-    function(feature, layer) {
-    return feature;
+    var popup = new ol.Overlay({
+      element: element,
+      positioning: 'bottom-center',
+      stopEvent: false
     });
-    
-  //if we found a feature then create and show the popup.
-  if (feature) {
-  var geometry = feature.getGeometry();
-  var coord = geometry.getCoordinates();
-  popup.setPosition(coord);
-  var displaycontent = '<b>Owner:</b> ' + feature.get('name') + '<br><b>License:</b> ' + feature.get('Status');
-  $(element).popover({
-    'placement': 'top',
-    'html': true,
-    'content': displaycontent
-  });
-  
-  $(element).popover('show');
-  
-  } else {
-  $(element).popover('destroy');
-  }
-});
+    map.addOverlay(popup);
 
-// change mouse cursor when over marker
-map.on('pointermove', function(e) {
-  if (e.dragging) {
-  $(element).popover('destroy');
-  return;
-  }
-  var pixel = map.getEventPixel(e.originalEvent);
-  var hit = map.hasFeatureAtPixel(pixel);
-  map.getTarget().style.cursor = hit ? 'pointer' : '';
-});
+    // display popup on click
+    
+    map.on('click', function(evt) {
+      //try to destroy it before doing anything else...s
+      $(element).popover('destroy');
+      
+      //Try to get a feature at the point of interest
+      var feature = map.forEachFeatureAtPixel(evt.pixel,
+        function(feature, layer) {
+        return feature;
+        });
+        
+      //if we found a feature then create and show the popup.
+      if (feature) {
+        var geometry = feature.getGeometry();
+        var coord = geometry.getCoordinates();
+        popup.setPosition(coord);
+        var displaycontent = '<b>Owner:</b> ' + feature.get('name') + '<br><b>License:</b> ' + feature.get('Status');
+        $(element).popover({
+          'placement': 'top',
+          'html': true,
+          'content': displaycontent
+      });
+      
+      $(element).popover('show');
+      
+      } else {
+        $(element).popover('destroy');
+      }
+    });
+
+    // change mouse cursor when over marker
+    map.on('pointermove', function(e) {
+      if (e.dragging) {
+        $(element).popover('destroy');
+        return;
+      }
+      var pixel = map.getEventPixel(e.originalEvent);
+      var hit = map.hasFeatureAtPixel(pixel);
+      map.getTarget().style.cursor = hit ? 'pointer' : '';
+    });
