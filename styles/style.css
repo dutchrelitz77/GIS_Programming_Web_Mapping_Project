@@ -1,6 +1,6 @@
 /* Styling for openlayers popup boxes */
 
-/*.ol-popup {
+.ol-popup {
 	position: absolute;
 	background-color: white;
 	-webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
@@ -40,7 +40,7 @@
 }
 .ol-popup-closer:after {
 	content: "✖";
-}*/
+}
 
 html, body {
 	height: 100%;
