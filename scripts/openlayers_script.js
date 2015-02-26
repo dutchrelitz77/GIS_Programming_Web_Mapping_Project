@@ -28,7 +28,7 @@ var mtc = new ol.layer.Vector({
 var temples = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
-    url: 'kml/londonTemple_new.kml'
+    url: 'kml/londonTemple.kml'
   })
 });
 
@@ -85,7 +85,16 @@ map.on('click', function(evt) {
     var geometry = feature.getGeometry();
     var coord = geometry.getCoordinates();
     popup.setPosition(coord);
-    var displaycontent = '<b>Temple Name:</b> ' + feature.get('name') + '<br><b>Status:</b> ' + feature.get('Status') + '<br><b>Historical Facts: </b> ' + feature.get('Historical') + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">';
+    var displaycontent = 
+    if (feature.get('type') == 'Temple') {
+      '<b>Temple Name:</b> ' + feature.get('name') + '<br><b>Status:</b> ' + feature.get('Status') 
+      + '<br><b>Historical Facts: </b> ' + feature.get('Historical') + '<br><b><img src="' 
+      + feature.get('Image') + '" height="200" width="200">';
+    } else if(feature.get('type') == 'MTC'){
+      '<b>Temple Name:</b> ' + feature.get('name') + '<br><b>Status:</b> ' + feature.get('Status') 
+      + '<br><b>Historical Facts: </b> ' + feature.get('Historical') + '<br><b><img src="' 
+      + feature.get('Image') + '" height="200" width="200">';
+    };
     $(element).popover({
       'placement': 'top',
       'html': true,

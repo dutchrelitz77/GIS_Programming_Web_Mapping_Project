@@ -12,7 +12,10 @@
       <Snippet></Snippet>
        
       <!-- Data values for temple points -->
-      <ExtendedData>                       
+      <ExtendedData>     
+      <Data name="type">
+        <value>Temple</value>
+      </Data>                  
       <Data name="Status">
         <value>Operating</value>
       </Data>
