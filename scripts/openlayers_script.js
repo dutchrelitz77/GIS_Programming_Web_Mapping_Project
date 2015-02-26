@@ -85,8 +85,7 @@ map.on('click', function(evt) {
     var geometry = feature.getGeometry();
     var coord = geometry.getCoordinates();
     popup.setPosition(coord);
-    var displaycontent = 
-    if (feature.get('type') == 'Temple') {
+    var displaycontent = if (feature.get('type') == 'Temple') {
       '<b>Temple Name:</b> ' + feature.get('name') + '<br><b>Status:</b> ' + feature.get('Status') 
       + '<br><b>Historical Facts: </b> ' + feature.get('Historical') + '<br><b><img src="' 
       + feature.get('Image') + '" height="200" width="200">';
