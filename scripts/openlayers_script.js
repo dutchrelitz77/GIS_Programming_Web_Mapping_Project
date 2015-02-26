@@ -1,6 +1,3 @@
-// Create projection
-var projection = ol.proj.get('EPSG:3857');
-
 // Elements that make up the popup
 var container = document.getElementById('popup');
 var content = document.getElementById('popup-content');
@@ -18,6 +15,9 @@ closer.onclick = function() {
 var overlay = new ol.Overlay({
   element: container
 });
+
+// Create projection
+var projection = ol.proj.get('EPSG:3857');
 
 /* Add all layers to map */
 
@@ -80,7 +80,7 @@ var map = new ol.Map({
 
 map.on('click', function(evt) {
   //try to destroy it before doing anything else...s
-  $(element).popover('destroy');
+  //$(element).popover('destroy');
   
   //Try to get a feature at the point of interest
   var feature = map.forEachFeatureAtPixel(evt.pixel,
@@ -93,18 +93,9 @@ map.on('click', function(evt) {
     var geometry = feature.getGeometry();
     var coord = geometry.getCoordinates();
     overlay.setPosition(coord);
-    var displaycontent = '<b>Owner:</b> ' + feature.get('name') + '<br><b>License:</b> ' + feature.get('Status');
-    $(element).popover({
-      'placement': 'top',
-      'html': true,
-      'content': displaycontent
-    });
-  
-    $(element).popover('show');
-  
-    } else {
-      $(element).popover('destroy');
-    }
+    var displaycontent = feature.get('description');
+    content.innerHTML = displaycontent;
+  }
 });
 
 // map.on('click', function(evt) {
