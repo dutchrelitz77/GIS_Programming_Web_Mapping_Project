@@ -61,51 +61,51 @@ var map = new ol.Map({
 });
 var element = document.getElementById('popup');
 
-    var popup = new ol.Overlay({
-      element: element,
-      positioning: 'bottom-center',
-      stopEvent: false
-    });
-    map.addOverlay(popup);
+var popup = new ol.Overlay({
+  element: element,
+  positioning: 'bottom-center',
+  stopEvent: false
+});
+map.addOverlay(popup);
 
-    // display popup on click
+// display popup on click
+
+map.on('click', function(evt) {
+  //try to destroy it before doing anything else...s
+  $(element).popover('destroy');
+  
+  //Try to get a feature at the point of interest
+  var feature = map.forEachFeatureAtPixel(evt.pixel,
+      function(feature, layer) {
+      return feature;
+    });
     
-    map.on('click', function(evt) {
-      //try to destroy it before doing anything else...s
-      $(element).popover('destroy');
-      
-      //Try to get a feature at the point of interest
-      var feature = map.forEachFeatureAtPixel(evt.pixel,
-        function(feature, layer) {
-        return feature;
-        });
-        
-      //if we found a feature then create and show the popup.
-      if (feature) {
-        var geometry = feature.getGeometry();
-        var coord = geometry.getCoordinates();
-        popup.setPosition(coord);
-        var displaycontent = '<b>Owner:</b> ' + feature.get('name') + '<br><b>License:</b> ' + feature.get('Status');
-        $(element).popover({
-          'placement': 'top',
-          'html': true,
-          'content': displaycontent
-      });
-      
-      $(element).popover('show');
-      
-      } else {
-        $(element).popover('destroy');
-      }
-    });
+  //if we found a feature then create and show the popup.
+  if (feature) {
+    var geometry = feature.getGeometry();
+    var coord = geometry.getCoordinates();
+    popup.setPosition(coord);
+    var displaycontent = '<b>Temple Name:</b> ' + feature.get('name') + '<br><b>Status:</b> ' + feature.get('Status') + '<br><b>Historical Facts: </b> ' + feature.get('Historical') + '<br><b><img src="pictures/london_temple.jpg" alt="London Temple" height="100" width="100">';
+    $(element).popover({
+      'placement': 'top',
+      'html': true,
+      'content': displaycontent
+  });
+  
+  $(element).popover('show');
+  
+  } else {
+    $(element).popover('destroy');
+  }
+});
 
-    // change mouse cursor when over marker
-    map.on('pointermove', function(e) {
-      if (e.dragging) {
-        $(element).popover('destroy');
-        return;
-      }
-      var pixel = map.getEventPixel(e.originalEvent);
-      var hit = map.hasFeatureAtPixel(pixel);
-      map.getTarget().style.cursor = hit ? 'pointer' : '';
-    });
+// change mouse cursor when over marker
+map.on('pointermove', function(e) {
+  if (e.dragging) {
+    $(element).popover('destroy');
+    return;
+  }
+  var pixel = map.getEventPixel(e.originalEvent);
+  var hit = map.hasFeatureAtPixel(pixel);
+  map.getTarget().style.cursor = hit ? 'pointer' : '';
+});
