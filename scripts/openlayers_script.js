@@ -1,8 +1,6 @@
 // Create projection
 var projection = ol.proj.get('EPSG:3857');
 
-/* Elements  */
-
 /* Add all layers to map */
 
 // Create bing raster layer
@@ -31,10 +29,9 @@ var englandMTC = new ol.layer.Vector({
   })
 });
 
-
 /* Add all Temple layers */
 
-// London temple layer
+// Bern temple layer
 var bernTemple = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
@@ -42,7 +39,7 @@ var bernTemple = new ol.layer.Vector({
   })
 });
 
-// London temple layer
+// Denmark temple layer
 var denmarkTemple = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
@@ -50,7 +47,7 @@ var denmarkTemple = new ol.layer.Vector({
   })
 });
 
-// London temple layer
+// Finland temple layer
 var finlandTemple = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
@@ -58,7 +55,7 @@ var finlandTemple = new ol.layer.Vector({
   })
 });
 
-// London temple layer
+// Frankfurt temple layer
 var frankfurtTemple = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
@@ -66,7 +63,7 @@ var frankfurtTemple = new ol.layer.Vector({
   })
 });
 
-// London temple layer
+// Freiberg temple layer
 var freibergTemple = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
@@ -82,7 +79,7 @@ var londonTemple = new ol.layer.Vector({
   })
 });
 
-// London temple layer
+// Netherlands temple layer
 var netherlandsTemple = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
@@ -90,7 +87,7 @@ var netherlandsTemple = new ol.layer.Vector({
   })
 });
 
-// London temple layer
+// Paris temple layer
 var parisTemple = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
@@ -98,7 +95,7 @@ var parisTemple = new ol.layer.Vector({
   })
 });
 
-// London temple layer
+// Portugal temple layer
 var portugalTemple = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
@@ -106,7 +103,7 @@ var portugalTemple = new ol.layer.Vector({
   })
 });
 
-// London temple layer
+// Rome temple layer
 var romeTemple = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
@@ -114,7 +111,7 @@ var romeTemple = new ol.layer.Vector({
   })
 });
 
-// London temple layer
+// Spain temple layer
 var spainTemple = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
@@ -122,7 +119,7 @@ var spainTemple = new ol.layer.Vector({
   })
 });
 
-// London temple layer
+// Stockholm temple layer
 var stockholmTemple = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
@@ -130,7 +127,7 @@ var stockholmTemple = new ol.layer.Vector({
   })
 });
 
-// London temple layer
+// Ukraine temple layer
 var ukraineTemple = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
