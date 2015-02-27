@@ -8,7 +8,7 @@
     <name>Temples</name>
     <Snippet></Snippet>
     <Placemark id="ID_00000">
-      <name>Stockholm Temple</name>
+      <name>Stockholm Sweden Temple</name>
       <Snippet></Snippet>
        
       <!-- Data values for temple points -->
@@ -20,22 +20,22 @@
         <value>Operating</value>
       </Data>
       <Data name="Announcement">
-         <value>August 10, 1953</value>
+         <value>April 1, 1981</value>
       </Data>
       <Data name="Image">
-        <value>http://map.ldschurcheuropegis.info/pictures/london_temple.jpg</value>
+        <value>http://map.ldschurcheuropegis.info/pictures/sweden_temple.jpg</value>
       </Data>
       <Data name="Groundbreaking">
-         <value>August 27, 1955</value>
+         <value>March 17, 1984</value>
       </Data>
       <Data name="Dedicated">
-        <value>September 9, 1958</value>
+        <value>July 4, 1985</value>
       </Data>
       <Data name="Historical">
-         <value>This was the first temple built in the United Kingdom.</value>
+         <value>This was the first temple built in Scandinavia and in Sweden.</value>
       </Data>
       <Data name="website">
-         <value>http://www.ldschurchtemples.com/london/</value>
+         <value>http://www.ldschurchtemples.com/stockholm/</value>
       </Data>
       </ExtendedData>
       

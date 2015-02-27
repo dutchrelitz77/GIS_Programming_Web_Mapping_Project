@@ -8,7 +8,7 @@
     <name>Temples</name>
     <Snippet></Snippet>
     <Placemark id="ID_00000">
-      <name>London Temple</name>
+      <name>Paris France Temple</name>
       <Snippet></Snippet>
        
       <!-- Data values for temple points -->
@@ -17,25 +17,25 @@
         <value>Temple</value>
       </Data>                  
       <Data name="Status">
-        <value>Operating</value>
+        <value>Under Construction</value>
       </Data>
       <Data name="Announcement">
-         <value>August 10, 1953</value>
+         <value>October 1, 2011</value>
       </Data>
       <Data name="Image">
-        <value>http://map.ldschurcheuropegis.info/pictures/london_temple.jpg</value>
+        <value>http://map.ldschurcheuropegis.info/pictures/paris_temple.jpg</value>
       </Data>
       <Data name="Groundbreaking">
-         <value>August 27, 1955</value>
+         <value>N/A</value>
       </Data>
       <Data name="Dedicated">
-        <value>September 9, 1958</value>
+        <value>N/A</value>
       </Data>
       <Data name="Historical">
-         <value>This was the first temple built in the United Kingdom.</value>
+         <value>Will be first temple in France.</value>
       </Data>
       <Data name="website">
-         <value>http://www.ldschurchtemples.com/london/</value>
+         <value>http://www.ldschurchtemples.com/paris/</value>
       </Data>
       </ExtendedData>
       
@@ -44,7 +44,7 @@
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <altitudeMode>clampToGround</altitudeMode>
-        <coordinates> -0.05212697599995408,51.16263188700003,0</coordinates>
+        <coordinates> 2.12324164000006,48.81788962300004,0</coordinates>
       </Point>
     </Placemark>
 

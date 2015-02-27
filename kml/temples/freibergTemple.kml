@@ -20,22 +20,22 @@
         <value>Operating</value>
       </Data>
       <Data name="Announcement">
-         <value>October 9, 1982</value>
+         <value>April 1, 1981</value>
       </Data>
       <Data name="Image">
-        <value>http://map.ldschurcheuropegis.info/pictures/london_temple.jpg</value>
+        <value>http://map.ldschurcheuropegis.info/pictures/freiberg_temple.jpg</value>
       </Data>
       <Data name="Groundbreaking">
-         <value>April 23, 1983</value>
+         <value>July 1, 1985</value>
       </Data>
       <Data name="Dedicated">
-        <value>June 30, 1985</value>
+        <value>August 30, 1987</value>
       </Data>
       <Data name="Historical">
-         <value>This was the first temple built in a communist nation and the first built in Germany.</value>
+         <value>Fifth temple built in Europe, and second built in Germany.</value>
       </Data>
       <Data name="website">
-         <value>http://www.ldschurchtemples.com/london/</value>
+         <value>http://www.ldschurchtemples.com/freiberg/</value>
       </Data>
       </ExtendedData>
       
@@ -44,7 +44,7 @@
       <styleUrl>#IconStyle00</styleUrl>
       <Point>
         <altitudeMode>clampToGround</altitudeMode>
-        <coordinates> 13.32205000000005,50.92232000000007,0</coordinates>
+        <coordinates> 8.641313939000042,50.25823954500004,0</coordinates>
       </Point>
     </Placemark>
 
