@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="Temples.kml">
+  <name>Temples.kml</name>
+  <Snippet></Snippet>
+  <Folder id="FeatureLayer0">
+    <name>Temples</name>
+    <Snippet></Snippet>
+    <Placemark id="ID_00000">
+      <name>Preston, England MTC</name>
+      <Snippet></Snippet>
+       
+      <!-- Data values for temple points -->
+      <ExtendedData>     
+      <Data name="type">
+        <value>MTC</value>
+      </Data>                  
+      <Data name="Image">
+        <value>http://map.ldschurcheuropegis.info/pictures/england_mtc.jpg</value>
+      </Data>
+      <Data name="Dedicated">
+        <value>January 1, 1998</value>
+      </Data>
+      <Data name="Historical">
+         <value>First MTC in Europe.</value>
+      </Data>
+      <Data name="website">
+         <value>https://www.lds.org/callings/missionary/missionary-training-centers/england?lang=eng</value>
+      </Data>
+      </ExtendedData>
+      
+      <description>This is the temple sample KML file</description>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates> -2.630438519999927,53.66995969600004,0</coordinates>
+      </Point>
+    </Placemark>
+
+  </Folder>
+  <Style id="IconStyle00">
+    <IconStyle>
+      <Icon><href>kml/blueDot.png</href></Icon>
+      <scale>1.562500</scale>
+    </IconStyle>
+    <LabelStyle>
+      <color>ffffffff</color>
+      <scale>0.833333</scale>
+    </LabelStyle>
+    <PolyStyle>
+      <color>ff000000</color>
+      <outline>0</outline>
+    </PolyStyle>
+  </Style>
+</Document>
+</kml>

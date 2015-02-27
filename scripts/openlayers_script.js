@@ -13,13 +13,24 @@ var raster = new ol.layer.Tile({
   })
 });
 
-// Add MTC layer
-var mtc = new ol.layer.Vector({
+/* Add MTC layers */
+
+// Spain MTC layer
+var spainMTC = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
-    url: 'kml/mtc.kml'
+    url: 'kml/mtc/spainMTC.kml'
   })
 });
+
+// Spain MTC layer
+var englandMTC = new ol.layer.Vector({
+  source: new ol.source.KML({
+    projection: projection,
+    url: 'kml/mtc/englandMTC.kml'
+  })
+});
+
 
 /* Add all Temple layers */
 
@@ -145,7 +156,7 @@ var map = new ol.Map({
       ]
     })
   ]),
-  layers: [raster, mtc, bernTemple, denmarkTemple, finlandTemple, frankfurtTemple, freibergTemple, 
+  layers: [raster, spainMTC, englandMTC, bernTemple, denmarkTemple, finlandTemple, frankfurtTemple, freibergTemple, 
            londonTemple, netherlandsTemple, parisTemple, portugalTemple, romeTemple, spainTemple, stockholmTemple, ukraineTemple],
   target: document.getElementById('map'),
   renderer: exampleNS.getRendererFromQueryString(),
@@ -186,14 +197,17 @@ map.on('click', function(evt) {
 
     // if function for four KML files and their HTML styling for popup box
     if (feature.get('type') == 'Temple') {
-      displaycontent = '<b>Temple Name:</b> ' + feature.get('name') + '<br><b>Status:</b> ' + feature.get('Status') 
+      displaycontent = '<b>Temple Name:</b> ' + feature.get('name') + '<br><b>Status:</b> ' + feature.get('Status')
+                     + '<br><b>Announcement:</b> ' + feature.get('Announcement') + '<br><b>Groundbeaking:</b> ' + feature.get('Groundbeaking')
+                     + '<br><b>Dedicated:</b> ' + feature.get('Dedicated')
                      + '<br><b>Historical Facts: </b> ' + feature.get('Historical') + '<br><b><img src="' 
                      + feature.get('Image') + '" height="200" width="200">' + '<br><a href="' + feature.get('website') 
                      + '" target="_blank">Click Here for more info</a>';
     } else if(feature.get('type') == 'MTC'){
-      displaycontent = '<b>Temple Name:</b> ' + feature.get('name') + '<br><b>Status:</b> ' + feature.get('Status') 
+      displaycontent = '<b>Name of MTC:</b> ' + feature.get('name') + '<br><b>Dedication Date:</b> ' + feature.get('Dedicated') 
                      + '<br><b>Historical Facts: </b> ' + feature.get('Historical') + '<br><b><img src="' 
-                     + feature.get('Image') + '" height="200" width="200">';
+                     + feature.get('Image') + '" height="200" width="200">' + '<br><a href="' + feature.get('website') 
+                     + '" target="_blank">Click Here for more info</a>';
     } else if(feature.get('type') == 'Journey'){
       displaycontent = '<b>Temple Name:</b> ' + feature.get('name') + '<br><b>Status:</b> ' + feature.get('Status') 
                      + '<br><b>Historical Facts: </b> ' + feature.get('Historical') + '<br><b><img src="' 
