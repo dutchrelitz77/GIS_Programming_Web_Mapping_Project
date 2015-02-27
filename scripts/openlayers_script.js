@@ -200,7 +200,7 @@ map.on('click', function(evt) {
       displaycontent = '<b>Temple Name:</b><br> ' + feature.get('name') 
                      + '<br><b>Status:</b> ' + feature.get('Status')
                      + '<br><b>Announcement:</b><br> ' + feature.get('Announcement') 
-                     + '<br><b>Groundbeaking:</b><br> ' + feature.get('Groundbeaking')
+                     + '<br><b>Groundbreaking:</b><br> ' + feature.get('Groundbreaking')
                      + '<br><b>Dedicated:</b> ' + feature.get('Dedicated')
                      + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
                      + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">' 
