@@ -135,12 +135,21 @@ var ukraineTemple = new ol.layer.Vector({
   })
 });
 
-// Get layers extents
+// Function to get layers extents
+
+function getExtents (layers_all) {
+  myView = map.getView();
+  mySize = map.getSize();
+  myExtent = layers_all.getSource().getExtent();
+  myView.fitExtent(myExtent, mySize);
+}
 
 /* Initialize the map and set up main settings */
 
 // Initialize map
 var map = new ol.Map({
+  layers: [raster, spainMTC, englandMTC, bernTemple, denmarkTemple, finlandTemple, frankfurtTemple, freibergTemple, 
+           londonTemple, netherlandsTemple, parisTemple, portugalTemple, romeTemple, spainTemple, stockholmTemple, ukraineTemple],
   controls: ol.control.defaults({
     attributionOptions: /** @type {olx.control.AttributionOptions} */ ({
       collapsible: false
@@ -148,13 +157,10 @@ var map = new ol.Map({
   }).extend([
     new ol.control.ZoomToExtent({
       extent: [
-        813079.7791264898, 5929220.284081122,
-        898966.9639063801, 5936863.986909639
+        getExtents(layers)
       ]
     })
   ]),
-  layers: [raster, spainMTC, englandMTC, bernTemple, denmarkTemple, finlandTemple, frankfurtTemple, freibergTemple, 
-           londonTemple, netherlandsTemple, parisTemple, portugalTemple, romeTemple, spainTemple, stockholmTemple, ukraineTemple],
   target: document.getElementById('map'),
   renderer: exampleNS.getRendererFromQueryString(),
   view: new ol.View({
@@ -235,13 +241,3 @@ map.on('click', function(evt) {
   }
 });
 
-// // change mouse cursor when over marker
-// map.on('pointermove', function(e) {
-//   if (e.dragging) {
-//     $(element).popover('destroy');
-//     return;
-//   }
-//   var pixel = map.getEventPixel(e.originalEvent);
-//   var hit = map.hasFeatureAtPixel(pixel);
-//   map.getTarget().style.cursor = hit ? 'pointer' : '';
-// });
