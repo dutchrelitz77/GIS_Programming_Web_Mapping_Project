@@ -157,7 +157,7 @@ var map = new ol.Map({
   }).extend([
     new ol.control.ZoomToExtent({
       extent: [
-        getExtents(layers)
+        getExtents(spainMTC)
       ]
     })
   ]),
