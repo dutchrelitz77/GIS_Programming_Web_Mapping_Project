@@ -148,8 +148,6 @@ function getExtents (layers_all) {
 
 // Initialize map
 var map = new ol.Map({
-  layers: [raster, spainMTC, englandMTC, bernTemple, denmarkTemple, finlandTemple, frankfurtTemple, freibergTemple, 
-           londonTemple, netherlandsTemple, parisTemple, portugalTemple, romeTemple, spainTemple, stockholmTemple, ukraineTemple],
   controls: ol.control.defaults({
     attributionOptions: /** @type {olx.control.AttributionOptions} */ ({
       collapsible: false
@@ -157,10 +155,13 @@ var map = new ol.Map({
   }).extend([
     new ol.control.ZoomToExtent({
       extent: [
-        getExtents(spainMTC)
+        813079.7791264898, 5929220.284081122,
+        898966.9639063801, 5936863.986909639
       ]
     })
   ]),
+  layers: [raster, spainMTC, englandMTC, bernTemple, denmarkTemple, finlandTemple, frankfurtTemple, freibergTemple, 
+           londonTemple, netherlandsTemple, parisTemple, portugalTemple, romeTemple, spainTemple, stockholmTemple, ukraineTemple],
   target: document.getElementById('map'),
   renderer: exampleNS.getRendererFromQueryString(),
   view: new ol.View({
