@@ -207,24 +207,24 @@ map.on('click', function(evt) {
                      + '<br><b>Groundbreaking:</b><br> ' + feature.get('Groundbreaking')
                      + '<br><b>Dedicated:</b> ' + feature.get('Dedicated')
                      + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
-                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">' 
+                     + '<br><b><img src="' + feature.get('Image') + '" height="225" width="225">' 
                      + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
     } else if(feature.get('type') == 'MTC'){
       displaycontent = '<b>Name of MTC:</b><br> ' + feature.get('name') 
                      + '<br><b>Dedication Date:</b><br> ' + feature.get('Dedicated') 
                      + '<br><b>Historical Facts: </b><br> ' + feature.get('Historical') 
-                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">' 
+                     + '<br><b><img src="' + feature.get('Image') + '" height="225" width="225">' 
                      + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
     } else if(feature.get('type') == 'Journey'){
       displaycontent = '<b>Temple Name:</b> ' + feature.get('name') 
                      + '<br><b>Status:</b> ' + feature.get('Status') 
                      + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
-                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">';
+                     + '<br><b><img src="' + feature.get('Image') + '" height="225" width="225">';
     } else if(feature.get('type') == 'CountryData'){
       displaycontent = '<b>Temple Name:</b> ' + feature.get('name') 
                      + '<br><b>Status:</b> ' + feature.get('Status') 
                      + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
-                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">';
+                     + '<br><b><img src="' + feature.get('Image') + '" height="225" width="225">';
     } else {
       displaycontent = '';
     };
