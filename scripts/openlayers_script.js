@@ -151,7 +151,14 @@ var ukraineTemple = new ol.layer.Vector({
   })
 });
 
-// Get layers extents
+// Function to get layers extents
+
+function getExtents (layers_all) {
+  myView = map.getView();
+  mySize = map.getSize();
+  myExtent = layers_all.getSource().getExtent();
+  myView.fitExtent(myExtent, mySize);
+}
 
 /* Initialize the map and set up main settings */
 
@@ -216,15 +223,16 @@ map.on('click', function(evt) {
                      + '<br><b>Groundbreaking:</b><br> ' + feature.get('Groundbreaking')
                      + '<br><b>Dedicated:</b> ' + feature.get('Dedicated')
                      + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
-                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">' 
+                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">' 
                      + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
     } else if(feature.get('type') == 'MTC'){
       displaycontent = '<b>Name of MTC:</b><br> ' + feature.get('name') 
                      + '<br><b>Dedication Date:</b><br> ' + feature.get('Dedicated') 
                      + '<br><b>Historical Facts: </b><br> ' + feature.get('Historical') 
-                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">' 
+                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">' 
                      + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
     } else if(feature.get('type') == 'Journey'){
+<<<<<<< HEAD
       displaycontent = '<b>Description:</b> ' + feature.get('Descriptio') 
                      + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">';
                      + '<br><a href="' + feature.get('Link_1') + '" target="_blank">Click Here for more info</a>';
@@ -235,6 +243,17 @@ map.on('click', function(evt) {
                      + '<br><b>Temples: </b> ' + feature.get('Temples')
                      + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">';
                      + '<br><a href="' + feature.get('Link') + '" target="_blank">Click Here for more info</a>';
+=======
+      displaycontent = '<b>Temple Name:</b> ' + feature.get('name') 
+                     + '<br><b>Status:</b> ' + feature.get('Status') 
+                     + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
+                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">';
+    } else if(feature.get('type') == 'CountryData'){
+      displaycontent = '<b>Temple Name:</b> ' + feature.get('name') 
+                     + '<br><b>Status:</b> ' + feature.get('Status') 
+                     + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
+                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">';
+>>>>>>> b1d0c15b0365ced55be980fe42c74f2bbf40c2d9
     } else {
       displaycontent = '';
     };
@@ -252,13 +271,43 @@ map.on('click', function(evt) {
   }
 });
 
-// // change mouse cursor when over marker
-// map.on('pointermove', function(e) {
-//   if (e.dragging) {
-//     $(element).popover('destroy');
-//     return;
-//   }
-//   var pixel = map.getEventPixel(e.originalEvent);
-//   var hit = map.hasFeatureAtPixel(pixel);
-//   map.getTarget().style.cursor = hit ? 'pointer' : '';
-// });
+function dropdown_clicked(ID) {
+	myFeature = layers.getSource().getFeatures()[ID];
+	myCoords = myFeature.getGeometry().getCoordinates();
+	myView = map.getView();
+	myView.setCenter(myCoords);
+	myView.setZoom(15);
+	layers.getSource().getFeatures()[ID]
+	overlay.setPosition(myCoords);
+	var displaycontent = '';
+
+  // if function for four KML files and their HTML styling for popup box
+  if (feature.get('type') == 'Temple') {
+    displaycontent = '<b>Temple Name:</b><br> ' + feature.get('name') 
+                   + '<br><b>Status:</b> ' + feature.get('Status')
+                   + '<br><b>Announcement:</b><br> ' + feature.get('Announcement') 
+                   + '<br><b>Groundbreaking:</b><br> ' + feature.get('Groundbreaking')
+                   + '<br><b>Dedicated:</b> ' + feature.get('Dedicated')
+                   + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
+                   + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">' 
+                   + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
+  } else if(feature.get('type') == 'MTC'){
+    displaycontent = '<b>Name of MTC:</b><br> ' + feature.get('name') 
+                   + '<br><b>Dedication Date:</b><br> ' + feature.get('Dedicated') 
+                   + '<br><b>Historical Facts: </b><br> ' + feature.get('Historical') 
+                   + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">' 
+                   + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
+  } else if(feature.get('type') == 'Journey'){
+    displaycontent = '<b>Temple Name:</b> ' + feature.get('name') 
+                   + '<br><b>Status:</b> ' + feature.get('Status') 
+                   + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
+                   + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">';
+  } else if(feature.get('type') == 'CountryData'){
+    displaycontent = '<b>Temple Name:</b> ' + feature.get('name') 
+                   + '<br><b>Status:</b> ' + feature.get('Status') 
+                   + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
+                   + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">';
+  } else {
+    displaycontent = '';
+  };
+}
