@@ -5,16 +5,13 @@
 	<name>Europe</name>
 	<description>This layer represents the boundaries for the continents of the world. The layer is suitable for display to a largest scale of 1:15,000,000.</description>
 	<Style id="s1">
-      <LineStyle>
-        <color>7f0000ff</color>
-        <width>4</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>7f0000ff</color>
-        <colorMode>normal</colorMode>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
+      	<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>33ff0055</color>
+		</PolyStyle>
     </Style>
 		<Placemark id="ID_00000">
 			<name>Europe</name>
