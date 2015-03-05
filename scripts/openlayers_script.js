@@ -233,7 +233,6 @@ map.on('click', function(evt) {
                      + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">' 
                      + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
     } else if(feature.get('type') == 'Journey'){
-<<<<<<< HEAD
       displaycontent = '<b>Description:</b> ' + feature.get('Descriptio') 
                      + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">';
                      + '<br><a href="' + feature.get('Link_1') + '" target="_blank">Click Here for more info</a>';
@@ -244,7 +243,6 @@ map.on('click', function(evt) {
                      + '<br><b>Temples: </b> ' + feature.get('Temples')
                      + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">';
                      + '<br><a href="' + feature.get('Link') + '" target="_blank">Click Here for more info</a>';
-=======
       displaycontent = '<b>Temple Name:</b> ' + feature.get('name') 
                      + '<br><b>Status:</b> ' + feature.get('Status') 
                      + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
@@ -254,7 +252,6 @@ map.on('click', function(evt) {
                      + '<br><b>Status:</b> ' + feature.get('Status') 
                      + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
                      + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">';
->>>>>>> b1d0c15b0365ced55be980fe42c74f2bbf40c2d9
     } else {
       displaycontent = '';
     };
