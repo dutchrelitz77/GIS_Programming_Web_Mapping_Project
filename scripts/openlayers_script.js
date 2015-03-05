@@ -313,6 +313,7 @@ function setCountry(temple)
       layers[i].setVisible(true);
       //zoom to the layer extents
       map.getView().fitExtent(layers[i].getSource().getExtent(), map.getSize());
+      
     }
     else
     {   
