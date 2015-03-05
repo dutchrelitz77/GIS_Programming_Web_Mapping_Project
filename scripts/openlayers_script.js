@@ -233,7 +233,7 @@ map.on('click', function(evt) {
                      + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">' 
                      + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
     } else if(feature.get('type') == 'Journey'){
-      displaycontent = feature.get('name') + '<br>' +
+      displaycontent = '<b>Temple Name:</b><br> ' + feature.get('name')
                      + '<br><b>Description:</b><br> ' + feature.get('Description') 
                      + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">';
                      + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
