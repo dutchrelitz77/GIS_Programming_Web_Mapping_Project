@@ -9,9 +9,6 @@
 			<color>b200ff55</color>
 			<width>1.5</width>
 		</LineStyle>
-		<PolyStyle>
-			<color>00f0f0f0</color>
-		</PolyStyle>
 	</Style>
 		<Placemark id="ID_00000">
 			<name>Europe</name>
