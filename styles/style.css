@@ -3,7 +3,7 @@ html, body {
 }
 
 /* Styling for the buttons */
-button2:hover {
+.button2:hover {
 	background-color: aquamarine;
 }
 
