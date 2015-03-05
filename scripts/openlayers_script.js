@@ -6,7 +6,7 @@ var projection = ol.proj.get('EPSG:3857');
 // Create bing raster layer
 var raster = new ol.layer.Tile({
   source: new ol.source.BingMaps({
-    imagerySet: 'Road',
+    imagerySet: 'AerialWithLabels',
     key: 'Ak-dzM4wZjSqTlzveKz5u0d4IQ4bRzVI309GxmkgSVr1ewS6iPSrOvOKhA-CJlm3'
   })
 });
@@ -312,7 +312,7 @@ function setCountry(temple)
       //turn on the layer
       layers[i].setVisible(true);
       //zoom to the layer extents
-      myView = map.getView(setZoom(15)).fitExtent(layers[i].getSource().getExtent(), map.getSize());
+      myView = map.getView().fitExtent(layers[i].getSource().getExtent(), map.getSize());
     }
     else
     {   
