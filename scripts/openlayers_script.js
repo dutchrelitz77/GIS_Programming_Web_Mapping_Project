@@ -18,6 +18,7 @@ var Orsonspath = new ol.layer.Vector({
     url: 'kml/Journey/Orsonspath.kml'
   })
 });
+Orsonspath.name = 'Orsonspath';
 
 /* Add Polygon layer */
 var europe = new ol.layer.Vector({
@@ -26,6 +27,7 @@ var europe = new ol.layer.Vector({
     url: 'kml/Polygon/Europe.kml'
   })
 });
+europe.name = 'europe';
 
 /* Add MTC layers */
 
@@ -36,6 +38,7 @@ var spainMTC = new ol.layer.Vector({
     url: 'kml/mtc/spainMTC.kml'
   })
 });
+spainMTC.name = 'spainMTC';
 
 // Spain MTC layer
 var englandMTC = new ol.layer.Vector({
@@ -44,6 +47,7 @@ var englandMTC = new ol.layer.Vector({
     url: 'kml/mtc/englandMTC.kml'
   })
 });
+englandMTC.name = 'englandMTC';
 
 /* Add all Temple layers */
 
@@ -54,6 +58,8 @@ var bernTemple = new ol.layer.Vector({
     url: 'kml/temples/bernTemple.kml'
   })
 });
+bernTemple.name = 'bernTemple';
+
 
 // Denmark temple layer
 var denmarkTemple = new ol.layer.Vector({
@@ -62,6 +68,8 @@ var denmarkTemple = new ol.layer.Vector({
     url: 'kml/temples/denmarkTemple.kml'
   })
 });
+denmarkTemple.name = 'denmarkTemple';
+
 
 // Finland temple layer
 var finlandTemple = new ol.layer.Vector({
@@ -70,6 +78,8 @@ var finlandTemple = new ol.layer.Vector({
     url: 'kml/temples/finlandTemple.kml'
   })
 });
+finlandTemple.name = 'finlandTemple';
+
 
 // Frankfurt temple layer
 var frankfurtTemple = new ol.layer.Vector({
@@ -78,6 +88,8 @@ var frankfurtTemple = new ol.layer.Vector({
     url: 'kml/temples/frankfurtTemple.kml'
   })
 });
+frankfurtTemple.name = 'frankfurtTemple';
+
 
 // Freiberg temple layer
 var freibergTemple = new ol.layer.Vector({
@@ -86,6 +98,8 @@ var freibergTemple = new ol.layer.Vector({
     url: 'kml/temples/freibergTemple.kml'
   })
 });
+freibergTemple.name = 'freibergTemple';
+
 
 // London temple layer
 var londonTemple = new ol.layer.Vector({
@@ -94,6 +108,8 @@ var londonTemple = new ol.layer.Vector({
     url: 'kml/temples/londonTemple.kml'
   })
 });
+londonTemple.name = 'londonTemple';
+
 
 // Netherlands temple layer
 var netherlandsTemple = new ol.layer.Vector({
@@ -102,6 +118,8 @@ var netherlandsTemple = new ol.layer.Vector({
     url: 'kml/temples/netherlandsTemple.kml'
   })
 });
+netherlandsTemple.name = 'netherlandsTemple';
+
 
 // Paris temple layer
 var parisTemple = new ol.layer.Vector({
@@ -110,6 +128,8 @@ var parisTemple = new ol.layer.Vector({
     url: 'kml/temples/parisTemple.kml'
   })
 });
+parisTemple.name = 'parisTemple';
+
 
 // Portugal temple layer
 var portugalTemple = new ol.layer.Vector({
@@ -118,6 +138,8 @@ var portugalTemple = new ol.layer.Vector({
     url: 'kml/temples/portugalTemple.kml'
   })
 });
+portugalTemple.name = 'portugalTemple';
+
 
 // Rome temple layer
 var romeTemple = new ol.layer.Vector({
@@ -126,6 +148,8 @@ var romeTemple = new ol.layer.Vector({
     url: 'kml/temples/romeTemple.kml'
   })
 });
+romeTemple.name = 'romeTemple';
+
 
 // Spain temple layer
 var spainTemple = new ol.layer.Vector({
@@ -134,6 +158,8 @@ var spainTemple = new ol.layer.Vector({
     url: 'kml/temples/spainTemple.kml'
   })
 });
+spainTemple.name = 'spainTemple';
+
 
 // Stockholm temple layer
 var stockholmTemple = new ol.layer.Vector({
@@ -142,6 +168,8 @@ var stockholmTemple = new ol.layer.Vector({
     url: 'kml/temples/stockholmTemple.kml'
   })
 });
+stockholmTemple.name = 'stockholmTemple';
+
 
 // Ukraine temple layer
 var ukraineTemple = new ol.layer.Vector({
@@ -150,6 +178,8 @@ var ukraineTemple = new ol.layer.Vector({
     url: 'kml/temples/ukraineTemple.kml'
   })
 });
+ukraineTemple.name = 'ukraineTemple';
+
 
 // Function to get layers extents
 
