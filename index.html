@@ -61,8 +61,25 @@
 	<div class="container-fluid main2">
 		<div class='row'>
 			<div class="col-lg-2">
-				<p>Instructions will be written here</p>
-				<p>Maybe we can list the layers here for each KML</p>
+				<h4>LDS Temple in Europe - Choose from the Dropdown List</h4>
+				<form>
+		            <select onChange="setCountry(this.value)">
+		            	<option value="none">(Choose a country)</option>
+		                <option value="bernTemple">Bern Switzerland</option>
+		                <option value="denmarkTemple">Copenhagen Denmark</option>
+		                <option value="finlandTemple">Helsinki Finland</option>
+		                <option value="frankfurtTemple">Frankfurt Germany</option>
+		                <option value="freibergTemple">Freiberg Germany</option>
+		                <option value="netherlandsTemple">Hague Netherlandds</option>
+		                <option value="ukraineTemple">Kyiv Ukraine</option>
+		                <option value="londonTemple">London England</option>
+		                <option value="parisTemple">Paris France</option>
+		                <option value="portugalTemple">Lisbon Portugal</option>
+		                <option value="romeTemple">Rome Italy</option>
+		                <option value="spainTemple">Madrid Spain</option>
+		                <option value="stockholmTemple">Stockholm Sweden</option>
+		            </select> 
+        		</form>
 			</div>
 			<div class="col-lg-10">
 				<div id="map" class="map">
