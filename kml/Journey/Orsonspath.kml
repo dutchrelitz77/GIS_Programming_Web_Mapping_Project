@@ -5,8 +5,8 @@
 	<description>Orsons Path</description>
 	<Style id="style1">
 		<LineStyle>
-			<color>990000ff</color>
-			<width>4</width>
+			<color>7f000000</color>
+			<width>6</width>
 		</LineStyle>
 	</Style>
 	<Placemark>
