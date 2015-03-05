@@ -20,7 +20,7 @@ var Orsonspath = new ol.layer.Vector({
 });
 
 /* Add Polygon layer */
-var Orsonspath = new ol.layer.Vector({
+var europe = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
     url: 'kml/Polygon/Europe.kml'
@@ -177,7 +177,8 @@ var map = new ol.Map({
     })
   ]),
   layers: [raster, spainMTC, englandMTC, bernTemple, denmarkTemple, finlandTemple, frankfurtTemple, freibergTemple, 
-           londonTemple, netherlandsTemple, parisTemple, portugalTemple, romeTemple, spainTemple, stockholmTemple, ukraineTemple],
+           londonTemple, netherlandsTemple, parisTemple, portugalTemple, romeTemple, spainTemple, stockholmTemple, ukraineTemple,
+           Orsonspath, europe],
   target: document.getElementById('map'),
   renderer: exampleNS.getRendererFromQueryString(),
   view: new ol.View({
@@ -270,44 +271,3 @@ map.on('click', function(evt) {
     $(element).popover('destroy');
   }
 });
-
-function dropdown_clicked(ID) {
-	myFeature = layers.getSource().getFeatures()[ID];
-	myCoords = myFeature.getGeometry().getCoordinates();
-	myView = map.getView();
-	myView.setCenter(myCoords);
-	myView.setZoom(15);
-	layers.getSource().getFeatures()[ID]
-	overlay.setPosition(myCoords);
-	var displaycontent = '';
-
-  // if function for four KML files and their HTML styling for popup box
-  if (feature.get('type') == 'Temple') {
-    displaycontent = '<b>Temple Name:</b><br> ' + feature.get('name') 
-                   + '<br><b>Status:</b> ' + feature.get('Status')
-                   + '<br><b>Announcement:</b><br> ' + feature.get('Announcement') 
-                   + '<br><b>Groundbreaking:</b><br> ' + feature.get('Groundbreaking')
-                   + '<br><b>Dedicated:</b> ' + feature.get('Dedicated')
-                   + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
-                   + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">' 
-                   + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
-  } else if(feature.get('type') == 'MTC'){
-    displaycontent = '<b>Name of MTC:</b><br> ' + feature.get('name') 
-                   + '<br><b>Dedication Date:</b><br> ' + feature.get('Dedicated') 
-                   + '<br><b>Historical Facts: </b><br> ' + feature.get('Historical') 
-                   + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">' 
-                   + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
-  } else if(feature.get('type') == 'Journey'){
-    displaycontent = '<b>Temple Name:</b> ' + feature.get('name') 
-                   + '<br><b>Status:</b> ' + feature.get('Status') 
-                   + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
-                   + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">';
-  } else if(feature.get('type') == 'CountryData'){
-    displaycontent = '<b>Temple Name:</b> ' + feature.get('name') 
-                   + '<br><b>Status:</b> ' + feature.get('Status') 
-                   + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
-                   + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">';
-  } else {
-    displaycontent = '';
-  };
-}
