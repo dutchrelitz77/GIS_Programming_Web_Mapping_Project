@@ -243,15 +243,6 @@ map.on('click', function(evt) {
                      + '<br><b>Temples: </b> ' + feature.get('Temples')
                      + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">';
                      + '<br><a href="' + feature.get('Link') + '" target="_blank">Click Here for more info</a>';
-      displaycontent = '<b>Temple Name:</b> ' + feature.get('name') 
-                     + '<br><b>Status:</b> ' + feature.get('Status') 
-                     + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
-                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">';
-    } else if(feature.get('type') == 'CountryData'){
-      displaycontent = '<b>Temple Name:</b> ' + feature.get('name') 
-                     + '<br><b>Status:</b> ' + feature.get('Status') 
-                     + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
-                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">';
     } else {
       displaycontent = '';
     };
