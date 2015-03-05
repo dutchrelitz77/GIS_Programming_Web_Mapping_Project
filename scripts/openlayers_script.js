@@ -235,14 +235,14 @@ map.on('click', function(evt) {
     } else if(feature.get('type') == 'Journey'){
       displaycontent = '<b>' + feature.get('name') + '</b>' +
                      + '<br><b>Description:</b><br> ' + feature.get('Description') 
-                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">';
+                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">';
                      + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
     } else if(feature.get('type') == 'CountryData'){
       displaycontent = '<b>LDS Population:</b> ' + feature.get('LDSpop') 
                      + '<br><b>Missions:</b> ' + feature.get('Missions') 
                      + '<br><b>Congregations: </b> ' + feature.get('Congregations') 
-                     + '<br><b>Temples: </b> ' + feature.get('Temples')
-                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">';
+                     + '<br><b>Temples: </b> ' + feature.get('Operating_Temples')
+                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">';
                      + '<br><a href="' + feature.get('Link') + '" target="_blank">Click Here for more info</a>';
     } else {
       displaycontent = '';

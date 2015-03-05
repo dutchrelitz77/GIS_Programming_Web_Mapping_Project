@@ -7,7 +7,7 @@
 	<Style id="PolyStyle00">
 		<PolyStyle id="ID">
 			<!-- inherited from ColorStyle -->
-			<color>ffffffff</color>            <!-- kml:color -->
+			<color>ff0000cc</color>            <!-- kml:color -->
 			<colorMode>normal</colorMode>      <!-- kml:colorModeEnum: normal or random -->
 
 			<!-- specific to PolyStyle -->
@@ -33,7 +33,7 @@
 				<Data name="Congregations">
 					<value>1458</value>
 				</Data>
-				<Data name="Operationg_Temples">
+				<Data name="Operating_Temples">
 					<value>11</value>
 				</Data>
 				<Data name="website">
