@@ -182,9 +182,9 @@ var map = new ol.Map({
   target: document.getElementById('map'),
   renderer: exampleNS.getRendererFromQueryString(),
   view: new ol.View({
-    center: [876970.8463461736, 5859807.853963373],
+    center: [5006970.8463461736, 8009807.853963373],
     projection: projection,
-    zoom: 4
+    zoom: 3
   })
 });
 var element = document.getElementById('popup');
