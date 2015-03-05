@@ -5,10 +5,15 @@
 	<name>Europe</name>
 	<description>This layer represents the boundaries for the continents of the world. The layer is suitable for display to a largest scale of 1:15,000,000.</description>
 	<Style id="PolyStyle00">
-		<LineStyle>
-			<color>b200ff55</color>
-			<width>1.5</width>
-		</LineStyle>
+		<PolyStyle id="ID">
+			<!-- inherited from ColorStyle -->
+			<color>ffffffff</color>            <!-- kml:color -->
+			<colorMode>normal</colorMode>      <!-- kml:colorModeEnum: normal or random -->
+
+			<!-- specific to PolyStyle -->
+			<fill>0</fill>                     <!-- boolean -->
+			<outline>10</outline>               <!-- boolean -->
+		</PolyStyle>
 	</Style>
 		<Placemark id="ID_00000">
 			<name>Europe</name>
