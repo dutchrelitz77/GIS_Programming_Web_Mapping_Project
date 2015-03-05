@@ -243,12 +243,12 @@ map.on('click', function(evt) {
 });
 
 function dropdown_clicked(ID) {
-	myFeature = vectorLayer.getSource().getFeatures()[ID];
+	myFeature = layers.getSource().getFeatures()[ID];
 	myCoords = myFeature.getGeometry().getCoordinates();
 	myView = map.getView();
 	myView.setCenter(myCoords);
 	myView.setZoom(15);
-	vectorLayer.getSource().getFeatures()[ID]
+	layers.getSource().getFeatures()[ID]
 	overlay.setPosition(myCoords);
 	var displaycontent = '';
 
