@@ -241,7 +241,7 @@ map.on('click', function(evt) {
   //if we found a feature then create and show the popup.
   if (feature) {
     var geometry = feature.getGeometry();
-    var coord = geometry.getCoordinates();
+    var coord = geometry.getCoordinateFromPixel(evt.pixel);
     popup.setPosition(coord);
 
     var displaycontent = '';
