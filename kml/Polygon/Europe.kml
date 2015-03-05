@@ -2993,5 +2993,19 @@
 				</Polygon>
 			</MultiGeometry>
 		</Placemark>
+	<Style id="PolyStyle00">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0.000000</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff6e6e6e</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>fffcd1c7</color>
+			<outline>1</outline>
+		</PolyStyle>
+	</Style>
 </Document>
 </kml>
