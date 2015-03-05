@@ -2,6 +2,11 @@ html, body {
 	height: 100%;
 }
 
+/* Styling for the buttons */
+button2:hover {
+	background-color: aquamarine;
+}
+
 
 /* Styling for the header */
 
