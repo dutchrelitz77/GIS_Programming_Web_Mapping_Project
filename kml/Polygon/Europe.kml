@@ -1,89 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
-<Document id="World Continents" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="World Continents">
 	<name>Europe</name>
-	<Snippet maxLines="0"></Snippet>
+	<description>This layer represents the boundaries for the continents of the world. The layer is suitable for display to a largest scale of 1:15,000,000.</description>
 	<Style id="PolyStyle00">
 		<LabelStyle>
 			<color>00000000</color>
-			<scale>0</scale>
+			<scale>0.000000</scale>
 		</LabelStyle>
 		<LineStyle>
-			<color>b200ff55</color>
-			<width>1.5</width>
+			<color>ff6e6e6e</color>
+			<width>0.400000</width>
 		</LineStyle>
 		<PolyStyle>
-			<color>00f0f0f0</color>
+			<color>ffc9f7c6</color>
+			<outline>1</outline>
 		</PolyStyle>
-	</Style>
-	<Folder id="FeatureLayer0">
-		<name>World Continents</name>
-		<Snippet maxLines="0"></Snippet>
-		<description>This layer represents the boundaries for the continents of the world. The layer is suitable for display to a largest scale of 1:15,000,000.</description>
+  	</Style>
 		<Placemark id="ID_00000">
 			<name>Europe</name>
-			<Snippet maxLines="0"></Snippet>
-			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-
-<head>
-
-<META http-equiv="Content-Type" content="text/html">
-
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
-</head>
-
-<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
-
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
-
-<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
-
-<td>Europe</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
-
-<tr>
-
-<td>CONTINENT</td>
-
-<td>Europe</td>
-
-</tr>
-
-<tr bgcolor="#D4E4F3">
-
-<td>SQMI</td>
-
-<td>3821854.34569</td>
-
-</tr>
-
-<tr>
-
-<td>SQKM</td>
-
-<td>9898596.9251</td>
-
-</tr>
-
-</table>
-
-</td>
-
-</tr>
-
-</table>
-
-</body>
-
-</html>]]></description>
+			<ExtendedData>     
+				<Data name="type">
+					<value>CountryData</value>
+				</Data>                  
+				<Data name="Image">
+					<value>http://map.ldschurcheuropegis.info/pictures/confcenter.jpg</value>
+				</Data>
+				<Data name="Population">
+					<value>498668</value>
+				</Data>
+				<Data name="Missions">
+					<value>42</value>
+				</Data>
+				<Data name="Congregations">
+					<value>1458</value>
+				</Data>
+				<Data name="Operationg_Temples">
+					<value>11</value>
+				</Data>
+				<Data name="website">
+					<value>http://www.mormonnewsroom.org/facts-and-statistics</value>
+				</Data>
+			</ExtendedData>
+			<description>Europe LDS Data</description>
 			<styleUrl>#PolyStyle00</styleUrl>
 			<MultiGeometry>
 				<Polygon>
@@ -3038,6 +2998,5 @@
 				</Polygon>
 			</MultiGeometry>
 		</Placemark>
-	</Folder>
 </Document>
 </kml>

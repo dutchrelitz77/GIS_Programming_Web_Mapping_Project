@@ -176,9 +176,9 @@ var map = new ol.Map({
       ]
     })
   ]),
-  layers: [raster, spainMTC, englandMTC, bernTemple, denmarkTemple, finlandTemple, frankfurtTemple, freibergTemple, 
+  layers: [raster, europe, spainMTC, englandMTC, bernTemple, denmarkTemple, finlandTemple, frankfurtTemple, freibergTemple, 
            londonTemple, netherlandsTemple, parisTemple, portugalTemple, romeTemple, spainTemple, stockholmTemple, ukraineTemple,
-           Orsonspath, europe],
+           Orsonspath],
   target: document.getElementById('map'),
   renderer: exampleNS.getRendererFromQueryString(),
   view: new ol.View({
@@ -233,9 +233,10 @@ map.on('click', function(evt) {
                      + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">' 
                      + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
     } else if(feature.get('type') == 'Journey'){
-      displaycontent = '<b>Description:</b> ' + feature.get('Descriptio') 
+      displaycontent = '<b>' + feature.get('name') + '</b>' +
+                     + '<br><b>Description:</b><br> ' + feature.get('Description') 
                      + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">';
-                     + '<br><a href="' + feature.get('Link_1') + '" target="_blank">Click Here for more info</a>';
+                     + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
     } else if(feature.get('type') == 'CountryData'){
       displaycontent = '<b>LDS Population:</b> ' + feature.get('LDSpop') 
                      + '<br><b>Missions:</b> ' + feature.get('Missions') 
