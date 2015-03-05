@@ -242,46 +242,43 @@ map.on('click', function(evt) {
   }
 });
 
-function setCountry(theCountry) 
-{
-  //Check to make sure the country name is properly getting passed into this function
-  //console.log(someString) will write the contents of someString out to the Chrome console window.
-  console.log(theCountry);
-  
-  //Cycle through all my layers. 
-  //If the layer name is the same as the one that got passed in (theCountry) then turn it's visibility on
-  //otherwise turn its visbility off.
-  
-  //First get an array of layers
-  layers=map.getLayers().a;
-  
-  //Now check for the name of the layer
-  for (var i=1; i <= 16; i++) 
-  {
-    if (layers[i].name==theCountry) 
-    {
-      //turn on the layer
-      layers[i].setVisible(true);
-      //zoom to the layer extents
-      map.getView().fitExtent(layers[i].getSource().getExtent(), map.getSize());
-      
-      //set some custom text on the web page showing the country name
-      document.getElementById("viewing").innerHTML = fullName(theCountry);
-      document.getElementById("info_box").src="http://en.wikipedia.org/wiki/" + fullName(theCountry);
-    }
-    else
-    {   
-      //turn off all other layers
-      layers[i].setVisible(false);
-    }
-  }
-  
-  //If "none" then zoom to max extent of map
-  if (theCountry=="none") 
-  {
-    ZoomToMaxExtent();
-    document.getElementById("viewing").innerHTML = "Earth";
-    document.getElementById("info_box").src="http://en.wikipedia.org/wiki/Earth";
-  }
-}
+function dropdown_clicked(ID) {
+	myFeature = vectorLayer.getSource().getFeatures()[ID];
+	myCoords = myFeature.getGeometry().getCoordinates();
+	myView = map.getView();
+	myView.setCenter(myCoords);
+	myView.setZoom(15);
+	vectorLayer.getSource().getFeatures()[ID]
+	overlay.setPosition(myCoords);
+	var displaycontent = '';
 
+  // if function for four KML files and their HTML styling for popup box
+  if (feature.get('type') == 'Temple') {
+    displaycontent = '<b>Temple Name:</b><br> ' + feature.get('name') 
+                   + '<br><b>Status:</b> ' + feature.get('Status')
+                   + '<br><b>Announcement:</b><br> ' + feature.get('Announcement') 
+                   + '<br><b>Groundbreaking:</b><br> ' + feature.get('Groundbreaking')
+                   + '<br><b>Dedicated:</b> ' + feature.get('Dedicated')
+                   + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
+                   + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">' 
+                   + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
+  } else if(feature.get('type') == 'MTC'){
+    displaycontent = '<b>Name of MTC:</b><br> ' + feature.get('name') 
+                   + '<br><b>Dedication Date:</b><br> ' + feature.get('Dedicated') 
+                   + '<br><b>Historical Facts: </b><br> ' + feature.get('Historical') 
+                   + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">' 
+                   + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
+  } else if(feature.get('type') == 'Journey'){
+    displaycontent = '<b>Temple Name:</b> ' + feature.get('name') 
+                   + '<br><b>Status:</b> ' + feature.get('Status') 
+                   + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
+                   + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">';
+  } else if(feature.get('type') == 'CountryData'){
+    displaycontent = '<b>Temple Name:</b> ' + feature.get('name') 
+                   + '<br><b>Status:</b> ' + feature.get('Status') 
+                   + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
+                   + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">';
+  } else {
+    displaycontent = '';
+  };
+}
