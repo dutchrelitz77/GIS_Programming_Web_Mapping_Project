@@ -10,14 +10,14 @@
 			<width>2</width>
 		</LineStyle>
 		<PolyStyle id="ID">
-  		<!-- inherited from ColorStyle -->
-		<color>7f0000ff</color> 
-		<colorMode>normal</colorMode>      
+	  		<!-- inherited from ColorStyle -->
+			<color>4d0000ff</color> 
+			<colorMode>normal</colorMode>      
 
-		<!-- specific to PolyStyle -->
-		<fill>0</fill>                  
-		<outline>1</outline>               
-</PolyStyle>
+			<!-- specific to PolyStyle -->
+			<fill>0</fill>                  
+			<outline>1</outline>               
+		</PolyStyle>
     </Style>
 		<Placemark id="ID_00000">
 			<name>Europe</name>
