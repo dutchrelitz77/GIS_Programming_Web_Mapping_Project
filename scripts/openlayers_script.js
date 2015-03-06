@@ -320,7 +320,8 @@ function setCountry(temple)
     else
     {   
       //turn off all other layers
-      layers[i].setVisible(false);
+      //layers[i].setVisible(false);
+      console.log("didn't work");
     }
   }
   
