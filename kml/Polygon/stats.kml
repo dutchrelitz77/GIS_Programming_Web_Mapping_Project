@@ -6,17 +6,11 @@
 	<description>This layer represents the boundaries for the continents of the world. The layer is suitable for display to a largest scale of 1:15,000,000.</description>
 	<Style id="s1">
       	<LineStyle>
-			<color>7f0000ff</color>
-			<width>2</width>
+			<color>ff0000ff</color>
+			<width>3</width>
 		</LineStyle>
-		<PolyStyle id="ID">
-	  		<!-- inherited from ColorStyle -->
-			<color>4d0000ff</color> 
-			<colorMode>normal</colorMode>      
-
-			<!-- specific to PolyStyle -->
-			<fill>0</fill>                  
-			<outline>1</outline>               
+		<PolyStyle>
+			<color>00ff0055</color>
 		</PolyStyle>
     </Style>
 		<Placemark id="ID_00000">
