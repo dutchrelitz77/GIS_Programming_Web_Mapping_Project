@@ -274,7 +274,7 @@ map.on('click', function(evt) {
                      + '<br><b>Congregations: </b> ' + feature.get('Congregations') 
                      + '<br><b>Temples: </b> ' + feature.get('Operating_Temples')
                      + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">'
-                     + '<br><a href="' + feature.get('Link') + '" target="_blank">Click Here for more info</a>';
+                     + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
     } else {
       displaycontent = '';
     };
