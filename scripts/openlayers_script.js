@@ -199,8 +199,7 @@ var map = new ol.Map({
       collapsible: false
     })
   }).extend([
-    new ol.control.FullScreen(),
-    new ol.control.ZoomToExtent()
+    new ol.control.FullScreen()
   ]),
   layers: [raster, europe, spainMTC, englandMTC, bernTemple, denmarkTemple, finlandTemple, frankfurtTemple, freibergTemple, 
            londonTemple, netherlandsTemple, parisTemple, portugalTemple, romeTemple, spainTemple, stockholmTemple, ukraineTemple,
@@ -221,6 +220,11 @@ var popup = new ol.Overlay({
   stopEvent: false
 });
 map.addOverlay(popup);
+
+// Add zoom to extents button on map
+myExtentButton = new.ol.control.ZoomToExtent({
+  extent: europe.getSource().getExtent()
+});
 
 // display popup on click
 
