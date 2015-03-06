@@ -199,7 +199,8 @@ var map = new ol.Map({
       collapsible: false
     })
   }).extend([
-    new ol.control.FullScreen()
+    new ol.control.FullScreen(),
+    new ol.control.ScaleLine()
   ]),
   layers: [raster, europe, spainMTC, englandMTC, bernTemple, denmarkTemple, finlandTemple, frankfurtTemple, freibergTemple, 
            londonTemple, netherlandsTemple, parisTemple, portugalTemple, romeTemple, spainTemple, stockholmTemple, ukraineTemple,
