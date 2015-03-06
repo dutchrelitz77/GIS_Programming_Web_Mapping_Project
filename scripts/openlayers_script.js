@@ -373,5 +373,5 @@ function showData() {
   myCoords = myFeature.getGeometry().getCoordinates();
   myView = map.getView();
   myView.setCenter(myCoords[0]);
-  myView.setZoom(15);
+  myView.setZoom(10);
 }
