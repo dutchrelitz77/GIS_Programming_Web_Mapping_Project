@@ -330,3 +330,40 @@ function setCountry(temple)
     ZoomToMaxExtent();
   }
 }
+
+function setPolygon(data) 
+{
+  //Check to make sure the country name is properly getting passed into this function
+  //console.log(someString) will write the contents of someString out to the Chrome console window.
+  console.log(data);
+  
+  //Cycle through all my layers. 
+  //If the layer name is the same as the one that got passed in (theCountry) then turn it's visibility on
+  //otherwise turn its visbility off.
+  
+  //First get an array of layers
+  layers=map.getLayers().a;
+  
+  //Now check for the name of the layer
+  for (var i=1; i <= 16; i++) 
+  {
+    if (layers[i].name==data) 
+    {
+      //turn on the layer
+      layers[i].setVisible(true);
+      //zoom to the layer extents
+      map.getView().fitExtent(layers[i].getSource().getExtent(), map.getSize());
+    }
+    else
+    {   
+      //turn off all other layers
+      layers[i].setVisible(false);
+    }
+  }
+  
+  //If "none" then zoom to max extent of map
+  if (data=="none") 
+  {
+    ZoomToMaxExtent();
+  }
+}
