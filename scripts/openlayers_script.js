@@ -372,6 +372,8 @@ function showData() {
   myFeature = Orsonspath.getSource().getFeatures()[0];
   myCoords = myFeature.getGeometry().getCoordinates();
   myView = map.getView();
-  myView.setCenter(myCoords[0]);
+  midCoordIndex = parseInt(myCoords.length/2);
+  midCoord = myCoords[midCoordIndex];
+  myView.setCenter(midCoord);
   myView.setZoom(4);
 }
