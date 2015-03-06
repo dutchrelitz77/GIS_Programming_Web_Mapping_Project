@@ -183,10 +183,10 @@ ukraineTemple.name = 'ukraineTemple';
 
 // Function to get layers extents
 
-function getExtents (layers_all) {
+function getExtents () {
   myView = map.getView();
   mySize = map.getSize();
-  myExtent = layers_all.getSource().getExtent();
+  myExtent = europe.getSource().getExtent();
   myView.fitExtent(myExtent, mySize);
 }
 
@@ -201,8 +201,7 @@ var map = new ol.Map({
   }).extend([
     new ol.control.ZoomToExtent({
       extent: [
-        813079.7791264898, 5929220.284081122,
-        898966.9639063801, 5936863.986909639
+        getExtents()
       ]
     })
   ]),
