@@ -201,7 +201,7 @@ var map = new ol.Map({
   }).extend([
     new ol.control.ZoomToExtent({
       extent: [
-        map.getView().fitExtent(europe.getSource().getExtent(), map.getSize());
+        map.getView().fitExtent(europe.getSource().getExtent(), map.getSize())
       ]
     })
   ]),
