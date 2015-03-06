@@ -7,10 +7,12 @@
 	<Style id="s1">
       	<LineStyle>
 			<color>ff0000ff</color>
-			<width>1</width>
+			<width>2</width>
 		</LineStyle>
 		<PolyStyle>
-			<color>287896B4</color>
+			<outline>1</outline>
+			<fill>0</fill>
+			<color>00ffffff</color>
 		</PolyStyle>
     </Style>
 		<Placemark id="ID_00000">
