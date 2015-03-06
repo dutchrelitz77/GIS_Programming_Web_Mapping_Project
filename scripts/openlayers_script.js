@@ -222,7 +222,7 @@ var popup = new ol.Overlay({
 map.addOverlay(popup);
 
 // Add zoom to extents button on map
-myExtentButton = new.ol.control.ZoomToExtent({
+myExtentButton = new ol.control.ZoomToExtent({
   extent: europe.getSource().getExtent()
 });
 
