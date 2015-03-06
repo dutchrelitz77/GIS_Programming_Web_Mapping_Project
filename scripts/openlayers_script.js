@@ -25,12 +25,6 @@ var europe = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
     url: 'kml/Polygon/Europe.kml'
-  }),
-  style: new ol.style.Style({
-    fill: new ol.style.Fill({
-      color: '#ff9900',
-      opacity: 0
-    })
   })
 });
 europe.name = 'europe';
