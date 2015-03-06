@@ -368,26 +368,10 @@ function setPolygon(data)
   }
 }
 
-function showLine(polygon) {
-  layers = map.getLayers().a;
-
-  for (var i=1; i <= 16; i++) 
-  {
-    if (layers[i].name==polygon) 
-    {
-      //turn on the layer
-      layers[i].setVisible(true);
-      //zoom to the layer extents
-      var feature = layers[i].getSource().getFeatures()[0];
-      var coord = feature.getGeometry().getCoordinates();
-      myView = map.getView()
-      myView.setCenter(coord[0]);
-      myView.setZoom(13);
-    }
-    else
-    {   
-      //turn off all other layers
-      layers[i].setVisible(false);
-    }
-  }
+function showData() {
+  myFeature = Orsonspath.getSource().getFeatures()[0];
+  myCoords = myFeature.getGeometry().getCoordinates();
+  myView = map.getView();
+  myView.setCenter(myCoords[0]);
+  myView.setZoom(15);
 }
