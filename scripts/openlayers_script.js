@@ -225,6 +225,7 @@ map.addOverlay(popup);
 myExtentButton = new ol.control.ZoomToExtent({
   extent: europe.getSource().getExtent()
 });
+map.addControl(myExtentButton);
 
 // display popup on click
 
