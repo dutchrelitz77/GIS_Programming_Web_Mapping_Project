@@ -199,12 +199,8 @@ var map = new ol.Map({
       collapsible: false
     })
   }).extend([
-    new ol.control.ZoomToExtent({
-      extent: [
-        813079.7791264898, 5929220.284081122,
-        898966.9639063801, 5936863.986909639
-      ]
-    })
+    new ol.control.FullScreen(),
+    new ol.control.ZoomToExtent()
   ]),
   layers: [raster, europe, spainMTC, englandMTC, bernTemple, denmarkTemple, finlandTemple, frankfurtTemple, freibergTemple, 
            londonTemple, netherlandsTemple, parisTemple, portugalTemple, romeTemple, spainTemple, stockholmTemple, ukraineTemple,
@@ -319,8 +315,7 @@ function setCountry(temple)
     }
     else
     {   
-      //turn off all other layers
-      //layers[i].setVisible(false);
+      //console log the issue
       console.log("didn't work");
     }
   }
@@ -357,8 +352,8 @@ function setPolygon(data)
     }
     else
     {   
-      //turn off all other layers
-      layers[i].setVisible(false);
+      //console log the issue
+      console.log("didn't work");
     }
   }
   
