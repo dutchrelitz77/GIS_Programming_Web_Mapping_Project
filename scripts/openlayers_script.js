@@ -24,7 +24,7 @@ Orsonspath.name = 'Orsonspath';
 var europe = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
-    url: 'kml/Polygon/Europe.kml'
+    url: 'kml/Polygon/stats.kml'
   })
 });
 europe.name = 'europe';
