@@ -308,12 +308,19 @@ function setCountry(temple)
   {
     if (layers[i].name==temple) 
     {
+      //turn on the layer
+      layers[i].setVisible(true);
       //zoom to the layer extents
       var feature = layers[i].getSource().getFeatures()[0];
       var coord = feature.getGeometry().getCoordinates();
       myView = map.getView()
       myView.setCenter(coord);
       myView.setZoom(15);
+    }
+    else
+    {   
+      //turn off all other layers
+      layers[i].setVisible(false);
     }
   }
   
@@ -342,8 +349,15 @@ function setPolygon(data)
   {
     if (layers[i].name==data) 
     {
+      //turn on the layer
+      layers[i].setVisible(true);
       //zoom to the layer extents
       map.getView().fitExtent(layers[i].getSource().getExtent(), map.getSize());
+    }
+    else
+    {   
+      //turn off all other layers
+      layers[i].setVisible(false);
     }
   }
   
@@ -361,15 +375,19 @@ function showLine(polygon) {
   {
     if (layers[i].name==polygon) 
     {
+      //turn on the layer
+      layers[i].setVisible(true);
       //zoom to the layer extents
       var feature = layers[i].getSource().getFeatures()[0];
       var coord = feature.getGeometry().getCoordinates();
       myView = map.getView()
       myView.setCenter(coord[0]);
       myView.setZoom(13);
-
-
-      map.getView().fitExtent(layers[i].getSource().getExtent(), map.getSize());
+    }
+    else
+    {   
+      //turn off all other layers
+      layers[i].setVisible(false);
     }
   }
 }
