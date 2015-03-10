@@ -403,7 +403,6 @@ function TurnAllLayersOff() {
 
 // Add zoom to extents button on map
 myExtentButton = new ol.control.ZoomToExtent({
-  extent: europe.getSource().getExtent(),
-  TurnAllLayersOn()
+  extent: europe.getSource().getExtent()
 });
 map.addControl(myExtentButton);
