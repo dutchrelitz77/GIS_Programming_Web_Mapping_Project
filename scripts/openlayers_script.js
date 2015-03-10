@@ -240,12 +240,6 @@ var map = new ol.Map({
 });
 var element = document.getElementById('popup');
 
-// Add zoom to extents button on map
-myExtentButton = new ol.control.ZoomToExtent({
-  extent: europe.getSource().getExtent()
-});
-map.addControl(myExtentButton);
-
 // display popup on click
 map.on('click', function(evt) {
   
@@ -406,3 +400,10 @@ function TurnAllLayersOff() {
   }
   Orsonspath.setVisible(false);
 }
+
+// Add zoom to extents button on map
+myExtentButton = new ol.control.ZoomToExtent({
+  extent: europe.getSource().getExtent(),
+  TurnAllLayersOn()
+});
+map.addControl(myExtentButton);
