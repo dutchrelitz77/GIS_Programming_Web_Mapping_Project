@@ -313,6 +313,24 @@ function setCountry(temple)
       myView = map.getView()
       myView.setCenter(coord);
       myView.setZoom(15);
+      overlay.setPosition(coord);
+      var displaycontent = '';
+      if (feature.get('type') == 'Temple') {
+      displaycontent = '<b>Temple Name:</b><br> ' + feature.get('name') 
+                     + '<br><b>Status:</b> ' + feature.get('Status')
+                     + '<br><b>Announcement:</b><br> ' + feature.get('Announcement') 
+                     + '<br><b>Groundbreaking:</b><br> ' + feature.get('Groundbreaking')
+                     + '<br><b>Dedicated:</b> ' + feature.get('Dedicated')
+                     + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
+                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">' 
+                     + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
+      } else if(feature.get('type') == 'MTC'){
+        displaycontent = '<b>Name of MTC:</b><br> ' + feature.get('name') 
+                       + '<br><b>Dedication Date:</b><br> ' + feature.get('Dedicated') 
+                       + '<br><b>Historical Facts: </b><br> ' + feature.get('Historical') 
+                       + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">' 
+                       + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
+      content.innerHTML = displaycontent;
     }
     else
     {   
