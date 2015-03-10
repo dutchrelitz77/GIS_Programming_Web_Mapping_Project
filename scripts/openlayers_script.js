@@ -1,3 +1,27 @@
+/**
+ * Elements that make up the popup.
+ */
+var container = document.getElementById('popup');
+var content = document.getElementById('popup-content');
+var closer = document.getElementById('popup-closer');
+
+/**
+ * Add a click handler to hide the popup.
+ * @return {boolean} Don't follow the href.
+ */
+closer.onclick = function() {
+  overlay.setPosition(undefined);
+  closer.blur();
+  return false;
+};
+
+/**
+ * Create an overlay to anchor the popup to the map.
+ */
+var overlay = new ol.Overlay({
+  element: container
+});
+
 // Create projection
 var projection = ol.proj.get('EPSG:3857');
 
@@ -205,6 +229,7 @@ var map = new ol.Map({
   layers: [raster, europe, spainMTC, englandMTC, bernTemple, denmarkTemple, finlandTemple, frankfurtTemple, freibergTemple, 
            londonTemple, netherlandsTemple, parisTemple, portugalTemple, romeTemple, spainTemple, stockholmTemple, ukraineTemple,
            Orsonspath],
+  overlays: [overlay],
   target: document.getElementById('map'),
   renderer: exampleNS.getRendererFromQueryString(),
   view: new ol.View({
@@ -214,13 +239,6 @@ var map = new ol.Map({
   })
 });
 var element = document.getElementById('popup');
-
-var popup = new ol.Overlay({
-  element: element,
-  positioning: 'bottom-center',
-  stopEvent: false
-});
-map.addOverlay(popup);
 
 // Add zoom to extents button on map
 myExtentButton = new ol.control.ZoomToExtent({
