@@ -321,8 +321,8 @@ function setCountry(temple)
     }
     else
     {   
-      //console log the issue
-      console.log("didn't work");
+      //turn off all other layers
+      layers[i].setVisible(false);
     }
   }
   
@@ -358,8 +358,8 @@ function setPolygon(data)
     }
     else
     {   
-      //console log the issue
-      console.log("didn't work");
+      //turn off all other layers
+      layers[i].setVisible(false);
     }
   }
   
@@ -378,4 +378,12 @@ function showData() {
   midCoord = myCoords[midCoordIndex];
   myView.setCenter(midCoord);
   myView.setZoom(4);
+}
+
+function TurnAllLayersOn() {
+  //turn all the layers in the map off
+  layers = map.getLayers().a;
+  for (var i=1; i <= 16; i++) {
+    layers[i].setVisible(true);
+  }
 }
