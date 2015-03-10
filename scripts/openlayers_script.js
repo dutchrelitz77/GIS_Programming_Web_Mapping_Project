@@ -260,7 +260,7 @@ map.on('click', function(evt) {
 	var geometry = feature.getGeometry();
 	var coord = geometry.getCoordinates();
 	overlay.setPosition(coord);
- var displaycontent = '';
+ 	var displaycontent = '';
 
     // if function for four KML files and their HTML styling for popup box
     if (feature.get('type') == 'Temple') {
@@ -292,7 +292,9 @@ map.on('click', function(evt) {
                      + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
     } else {
       displaycontent = '';
+    content = displaycontent;
     };
+    
   }
 });
 
