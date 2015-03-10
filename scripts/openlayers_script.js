@@ -1,4 +1,4 @@
-//Elements that make up the popup.
+// Elements that make up the popup
 var container = document.getElementById('popup');
 var content = document.getElementById('popup-content');
 var closer = document.getElementById('popup-closer');
@@ -325,6 +325,7 @@ function setCountry(temple)
                        + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">' 
                        + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
       content.innerHTML = displaycontent;
+      }
     }
     else
     {   
