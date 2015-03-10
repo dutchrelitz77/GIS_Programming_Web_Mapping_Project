@@ -206,12 +206,22 @@ ukraineTemple.name = 'ukraineTemple';
 
 
 // Function to get layers extents
-
 function getExtents (layers_all) {
   myView = map.getView();
   mySize = map.getSize();
   myExtent = layers_all.getSource().getExtent();
   myView.fitExtent(myExtent, mySize);
+}
+
+// Function to Zoom to Max Entent of map
+function ZoomToMaxExtent() {
+  //simple helper function to quickly zoom to the max extent of the map.
+  map.setView(new ol.View({
+    center: [5006970.8463461736, 8009807.853963373],
+    projection: ol.proj.get('EPSG:3857'),
+    zoom: 3
+  }));
+  TurnAllLayersOn();
 }
 
 /* Initialize the map and set up main settings */
@@ -243,13 +253,13 @@ var element = document.getElementById('popup');
 // display popup on click
 map.on('click', function(evt) {
   
-  //Try to get a feature at the point of interest
+  // Try to get a feature at the point of interest
   var feature = map.forEachFeatureAtPixel(evt.pixel,
 	  function(feature, layer) {
 		return feature;
 	  });
 	  
-  //if we found a feature then create and show the popup.
+  // if we found a feature then create and show the popup.
   if (feature) {
 	var geometry = feature.getGeometry();
 	var coord = map.getCoordinateFromPixel(evt.pixel);
