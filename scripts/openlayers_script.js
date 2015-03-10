@@ -293,7 +293,7 @@ map.on('click', function(evt) {
     } else {
       displaycontent = '';
     };
-    content = displaycontent;
+    content.innerHTML = displaycontent;
   }
 });
 
