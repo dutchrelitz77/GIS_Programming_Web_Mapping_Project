@@ -229,23 +229,20 @@ myExtentButton = new ol.control.ZoomToExtent({
 map.addControl(myExtentButton);
 
 // display popup on click
-
 map.on('click', function(evt) {
-  //try to destroy it before doing anything else...s
-  $(element).popover('destroy');
   
   //Try to get a feature at the point of interest
   var feature = map.forEachFeatureAtPixel(evt.pixel,
-      function(feature, layer) {
-      return feature;
-    });
-    
+	  function(feature, layer) {
+		return feature;
+	  });
+	  
   //if we found a feature then create and show the popup.
   if (feature) {
-    var coord = map.getCoordinateFromPixel(evt.pixel);
-    popup.setPosition(coord);
-
-    var displaycontent = '';
+	var geometry = feature.getGeometry();
+	var coord = geometry.getCoordinates();
+	overlay.setPosition(coord);
+ var displaycontent = '';
 
     // if function for four KML files and their HTML styling for popup box
     if (feature.get('type') == 'Temple') {
@@ -278,17 +275,6 @@ map.on('click', function(evt) {
     } else {
       displaycontent = '';
     };
-
-    $(element).popover({
-      'placement': 'top',
-      'html': true,
-      'content': displaycontent
-  });
-  
-  $(element).popover('show');
-  
-  } else {
-    $(element).popover('destroy');
   }
 });
 
