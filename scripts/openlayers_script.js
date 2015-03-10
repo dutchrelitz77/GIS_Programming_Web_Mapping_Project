@@ -1,28 +1,22 @@
-/**
- * Elements that make up the popup.
- */
+// Elements that make up the popup.
 var container = document.getElementById('popup');
 var content = document.getElementById('popup-content');
 var closer = document.getElementById('popup-closer');
 
-/**
- * Add a click handler to hide the popup.
- * @return {boolean} Don't follow the href.
- */
+// Add a click handler to hide the popup.
+// @return {boolean} Don't follow the href.
 closer.onclick = function() {
   overlay.setPosition(undefined);
   closer.blur();
   return false;
 };
 
-/**
- * Create an overlay to anchor the popup to the map.
- */
+// Create an overlay to anchor the popup to the map.
 var overlay = new ol.Overlay({
   element: container
 });
 
-// Create projection
+// Create projection variable
 var projection = ol.proj.get('EPSG:3857');
 
 /* Add all layers to map */
@@ -35,7 +29,9 @@ var raster = new ol.layer.Tile({
   })
 });
 
-/* Add Journey layer */
+/* Add polygon and polyline layers */
+
+// Add Journey layer
 var Orsonspath = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
@@ -44,7 +40,7 @@ var Orsonspath = new ol.layer.Vector({
 });
 Orsonspath.name = 'Orsonspath';
 
-/* Add Polygon layer */
+// Add Polygon layer
 var europe = new ol.layer.Vector({
   source: new ol.source.KML({
     projection: projection,
@@ -84,7 +80,6 @@ var bernTemple = new ol.layer.Vector({
 });
 bernTemple.name = 'bernTemple';
 
-
 // Denmark temple layer
 var denmarkTemple = new ol.layer.Vector({
   source: new ol.source.KML({
@@ -93,7 +88,6 @@ var denmarkTemple = new ol.layer.Vector({
   })
 });
 denmarkTemple.name = 'denmarkTemple';
-
 
 // Finland temple layer
 var finlandTemple = new ol.layer.Vector({
@@ -104,7 +98,6 @@ var finlandTemple = new ol.layer.Vector({
 });
 finlandTemple.name = 'finlandTemple';
 
-
 // Frankfurt temple layer
 var frankfurtTemple = new ol.layer.Vector({
   source: new ol.source.KML({
@@ -113,7 +106,6 @@ var frankfurtTemple = new ol.layer.Vector({
   })
 });
 frankfurtTemple.name = 'frankfurtTemple';
-
 
 // Freiberg temple layer
 var freibergTemple = new ol.layer.Vector({
@@ -124,7 +116,6 @@ var freibergTemple = new ol.layer.Vector({
 });
 freibergTemple.name = 'freibergTemple';
 
-
 // London temple layer
 var londonTemple = new ol.layer.Vector({
   source: new ol.source.KML({
@@ -133,7 +124,6 @@ var londonTemple = new ol.layer.Vector({
   })
 });
 londonTemple.name = 'londonTemple';
-
 
 // Netherlands temple layer
 var netherlandsTemple = new ol.layer.Vector({
@@ -144,7 +134,6 @@ var netherlandsTemple = new ol.layer.Vector({
 });
 netherlandsTemple.name = 'netherlandsTemple';
 
-
 // Paris temple layer
 var parisTemple = new ol.layer.Vector({
   source: new ol.source.KML({
@@ -153,7 +142,6 @@ var parisTemple = new ol.layer.Vector({
   })
 });
 parisTemple.name = 'parisTemple';
-
 
 // Portugal temple layer
 var portugalTemple = new ol.layer.Vector({
@@ -164,7 +152,6 @@ var portugalTemple = new ol.layer.Vector({
 });
 portugalTemple.name = 'portugalTemple';
 
-
 // Rome temple layer
 var romeTemple = new ol.layer.Vector({
   source: new ol.source.KML({
@@ -173,7 +160,6 @@ var romeTemple = new ol.layer.Vector({
   })
 });
 romeTemple.name = 'romeTemple';
-
 
 // Spain temple layer
 var spainTemple = new ol.layer.Vector({
@@ -184,7 +170,6 @@ var spainTemple = new ol.layer.Vector({
 });
 spainTemple.name = 'spainTemple';
 
-
 // Stockholm temple layer
 var stockholmTemple = new ol.layer.Vector({
   source: new ol.source.KML({
@@ -193,7 +178,6 @@ var stockholmTemple = new ol.layer.Vector({
   })
 });
 stockholmTemple.name = 'stockholmTemple';
-
 
 // Ukraine temple layer
 var ukraineTemple = new ol.layer.Vector({
@@ -204,18 +188,8 @@ var ukraineTemple = new ol.layer.Vector({
 });
 ukraineTemple.name = 'ukraineTemple';
 
-
-// Function to get layers extents
-function getExtents (layers_all) {
-  myView = map.getView();
-  mySize = map.getSize();
-  myExtent = layers_all.getSource().getExtent();
-  myView.fitExtent(myExtent, mySize);
-}
-
-// Function to Zoom to Max Entent of map
+// Function to Zoom to Map Max Entent
 function ZoomToMaxExtent() {
-  //simple helper function to quickly zoom to the max extent of the map.
   map.setView(new ol.View({
     center: [5006970.8463461736, 8009807.853963373],
     projection: ol.proj.get('EPSG:3857'),
@@ -248,9 +222,17 @@ var map = new ol.Map({
     zoom: 3
   })
 });
+
+// Add zoom to extents button on map
+myExtentButton = new ol.control.ZoomToExtent({
+  extent: europe.getSource().getExtent()
+});
+map.addControl(myExtentButton);
+
+// Define the popup element
 var element = document.getElementById('popup');
 
-// display popup on click
+// Display popup on click
 map.on('click', function(evt) {
   
   // Try to get a feature at the point of interest
@@ -259,14 +241,14 @@ map.on('click', function(evt) {
 		return feature;
 	  });
 	  
-  // if we found a feature then create and show the popup.
+  // I(f we found a feature then create and show the popup
   if (feature) {
 	var geometry = feature.getGeometry();
 	var coord = map.getCoordinateFromPixel(evt.pixel);
 	overlay.setPosition(coord);
  	var displaycontent = '';
 
-    // if function for four KML files and their HTML styling for popup box
+    // if function for four KML files and the HTML styling for each popup box
     if (feature.get('type') == 'Temple') {
       displaycontent = '<b>Temple Name:</b><br> ' + feature.get('name') 
                      + '<br><b>Status:</b> ' + feature.get('Status')
@@ -297,27 +279,27 @@ map.on('click', function(evt) {
     } else {
       displaycontent = '';
     };
+    // Add the content to the content div to display properly
     content.innerHTML = displaycontent;
   }
 });
 
-function setCountry(temple) 
-{
-  //Cycle through all my layers. 
-  //If the layer name is the same as the one that got passed in (theCountry) then turn it's visibility on
-  //otherwise turn its visbility off.
-  
-  //First get an array of layers
+// Cycle through all layers (used for temple and mtc layers)
+// If the layers is same as one that gets passed in this turn it's visibility on
+// If not then turn all of the others off
+function setCountry(building) 
+{  
+  // First get an array of layers
   layers=map.getLayers().a;
   
-  //Now check for the name of the layer
+  // Now check for the name of the layer
   for (var i=1; i <= 16; i++) 
   {
-    if (layers[i].name==temple) 
+    if (layers[i].name==building) 
     {
-      //turn on the layer
+      // turn on the layer
       layers[i].setVisible(true);
-      //zoom to the layer extents
+      // zoom to the layer extents
       var feature = layers[i].getSource().getFeatures()[0];
       var coord = feature.getGeometry().getCoordinates();
       myView = map.getView()
@@ -326,61 +308,64 @@ function setCountry(temple)
     }
     else
     {   
-      //turn off all other layers
+      // turn off all other layers
       layers[i].setVisible(false);
       Orsonspath.setVisible(false);
     }
   }
   
-  //If "none" then zoom to max extent of map
-  if (temple=="none") 
+  // If "none" then zoom to max extent of map
+  if (building=="none") 
   {
     ZoomToMaxExtent();
   }
 }
 
-function setPolygon(data) 
+// Cycle through all my layers (Used for the polygon layer)
+// If the layer name is the same as the one that got passed in then turn it's visibility on
+// otherwise turn its visbility off.
+function setPolygon(line) 
 {
-  //Cycle through all my layers. 
-  //If the layer name is the same as the one that got passed in (theCountry) then turn it's visibility on
-  //otherwise turn its visbility off.
-  
-  //First get an array of layers
+  // First get an array of layers
   layers=map.getLayers().a;
   
-  //Now check for the name of the layer
+  // Now check for the name of the layer
   for (var i=1; i <= 16; i++) 
   {
-    if (layers[i].name==data) 
+    if (layers[i].name==line) 
     {
-      //turn on the layer
+      // turn on the layer
       layers[i].setVisible(true);
-      //zoom to the layer extents
+      // zoom to the layer extents
       map.getView().fitExtent(layers[i].getSource().getExtent(), map.getSize());
     }
     else
     {   
-      //turn off all other layers
+      // turn off all other layers
       layers[i].setVisible(false);
       Orsonspath.setVisible(false);
     }
   }
   
-  //If "none" then zoom to max extent of map
-  if (data=="none") 
+  // If "none" then zoom to max extent of map
+  if (line=="none") 
   {
     ZoomToMaxExtent();
   }
 }
 
-function showData() {
-  // turn off all other layers
+// Function to show the orsonspath layer
+// Turns off visibility of all other layers but the polyline layer
+function showData() 
+{
+  // turn off all other layers but the polyline layer
   layers = map.getLayers().a;
-  for (var i=1; i <= 16; i++) {
+  for (var i=1; i <= 16; i++) 
+  {
     layers[i].setVisible(false);
   }
 
-  // Show data for the Orsonspath
+  // Set Orsonspath polyline to visible
   Orsonspath.setVisible(true);
 
   // Zoom to the Orsonspath polyline
@@ -393,8 +378,9 @@ function showData() {
   myView.setZoom(4);
 }
 
-function TurnAllLayersOn() {
-  //turn all the layers in the map off
+// turn all the layers in the map on
+function TurnAllLayersOn() 
+{
   layers = map.getLayers().a;
   for (var i=1; i <= 16; i++) {
     layers[i].setVisible(true);
@@ -402,17 +388,13 @@ function TurnAllLayersOn() {
   Orsonspath.setVisible(true);
 }
 
-function TurnAllLayersOff() {
-  //turn all the layers in the map off
+// turn all the layers in the map off
+function TurnAllLayersOff() 
+{
+  
   layers = map.getLayers().a;
   for (var i=1; i <= 16; i++) {
     layers[i].setVisible(false);
   }
   Orsonspath.setVisible(false);
 }
-
-// Add zoom to extents button on map
-myExtentButton = new ol.control.ZoomToExtent({
-  extent: europe.getSource().getExtent()
-});
-map.addControl(myExtentButton);

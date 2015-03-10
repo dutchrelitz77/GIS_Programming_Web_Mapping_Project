@@ -1,3 +1,5 @@
+/* Styling for html and body - for sticky footer */
+
 html, body {
 	height: 100%;
 }
@@ -47,7 +49,8 @@ html, body {
 	content: "✖";
 }
 
-/* Styling for the buttons */
+/* Styling for hover color of the buttons */
+
 .button2:hover {
 	background-color: aquamarine;
 }
