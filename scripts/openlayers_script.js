@@ -365,8 +365,16 @@ function setPolygon(data)
 }
 
 function showData() {
+  // turn off all other layers
+  layers = map.getLayers().a;
+  for (var i=1; i <= 16; i++) {
+    layers[i].setVisible(false);
+  }
+
   // Show data for the Orsonspath
   Orsonspath.setVisible(true);
+
+  // Zoom to the Orsonspath polyline
   myFeature = Orsonspath.getSource().getFeatures()[0];
   myCoords = myFeature.getGeometry().getCoordinates();
   myView = map.getView();
