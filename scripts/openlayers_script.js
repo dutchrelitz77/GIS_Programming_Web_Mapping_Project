@@ -394,4 +394,5 @@ function TurnAllLayersOff() {
   for (var i=1; i <= 16; i++) {
     layers[i].setVisible(false);
   }
+  Orsonspath.setVisible(false);
 }
