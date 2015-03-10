@@ -270,25 +270,25 @@ map.on('click', function(evt) {
                      + '<br><b>Groundbreaking:</b><br> ' + feature.get('Groundbreaking')
                      + '<br><b>Dedicated:</b> ' + feature.get('Dedicated')
                      + '<br><b>Historical Facts: </b> ' + feature.get('Historical') 
-                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">' 
+                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">' 
                      + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
     } else if(feature.get('type') == 'MTC'){
       displaycontent = '<b>Name of MTC:</b><br> ' + feature.get('name') 
                      + '<br><b>Dedication Date:</b><br> ' + feature.get('Dedicated') 
                      + '<br><b>Historical Facts: </b><br> ' + feature.get('Historical') 
-                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">' 
+                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">' 
                      + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
     } else if(feature.get('type') == 'Journey'){
-      displaycontent = '<b>Temple Name:</b><br> ' + feature.get('name')
+      displaycontent = '<b>Name:</b><br> ' + feature.get('name')
                      + '<br><b>Description:</b><br> ' + feature.get('Description') 
-                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">'
+                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">'
                      + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
     } else if(feature.get('type') == 'CountryData'){
       displaycontent = '<b>LDS Population:</b> ' + feature.get('LDSpop') 
                      + '<br><b>Missions:</b> ' + feature.get('Missions') 
                      + '<br><b>Congregations: </b> ' + feature.get('Congregations') 
                      + '<br><b>Temples: </b> ' + feature.get('Operating_Temples')
-                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="225">'
+                     + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">'
                      + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
     } else {
       displaycontent = '';
