@@ -292,9 +292,8 @@ map.on('click', function(evt) {
                      + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
     } else {
       displaycontent = '';
-    content = displaycontent;
     };
-    
+    content = displaycontent;
   }
 });
 
