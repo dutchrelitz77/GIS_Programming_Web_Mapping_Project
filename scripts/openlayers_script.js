@@ -232,7 +232,7 @@ map.addControl(myExtentButton);
 
 map.on('click', function(evt) {
   //try to destroy it before doing anything else...s
-  $(element).popover('destroy');
+  //$(element).popover('destroy');
   
   //Try to get a feature at the point of interest
   var feature = map.forEachFeatureAtPixel(evt.pixel,
