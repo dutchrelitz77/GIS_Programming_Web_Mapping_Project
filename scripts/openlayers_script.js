@@ -294,10 +294,6 @@ map.on('click', function(evt) {
 
 function setCountry(temple) 
 {
-  //Check to make sure the country name is properly getting passed into this function
-  //console.log(someString) will write the contents of someString out to the Chrome console window.
-  console.log(temple);
-  
   //Cycle through all my layers. 
   //If the layer name is the same as the one that got passed in (theCountry) then turn it's visibility on
   //otherwise turn its visbility off.
@@ -336,10 +332,6 @@ function setCountry(temple)
 
 function setPolygon(data) 
 {
-  //Check to make sure the country name is properly getting passed into this function
-  //console.log(someString) will write the contents of someString out to the Chrome console window.
-  console.log(data);
-  
   //Cycle through all my layers. 
   //If the layer name is the same as the one that got passed in (theCountry) then turn it's visibility on
   //otherwise turn its visbility off.
@@ -373,6 +365,7 @@ function setPolygon(data)
 }
 
 function showData() {
+  // Show data for the Orsonspath
   myFeature = Orsonspath.getSource().getFeatures()[0];
   myCoords = myFeature.getGeometry().getCoordinates();
   myView = map.getView();
