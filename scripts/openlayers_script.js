@@ -323,6 +323,7 @@ function setCountry(temple)
     {   
       //turn off all other layers
       layers[i].setVisible(false);
+      Orsonspath.setVisible(false);
     }
   }
   
@@ -360,6 +361,7 @@ function setPolygon(data)
     {   
       //turn off all other layers
       layers[i].setVisible(false);
+      Orsonspath.setVisible(false);
     }
   }
   
