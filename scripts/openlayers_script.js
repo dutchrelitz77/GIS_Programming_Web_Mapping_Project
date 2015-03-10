@@ -366,6 +366,7 @@ function setPolygon(data)
 
 function showData() {
   // Show data for the Orsonspath
+  Orsonspath.setVisible(true);
   myFeature = Orsonspath.getSource().getFeatures()[0];
   myCoords = myFeature.getGeometry().getCoordinates();
   myView = map.getView();
