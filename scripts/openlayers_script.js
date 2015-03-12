@@ -270,7 +270,7 @@ map.on('click', function(evt) {
                      + '<br><b><img src="' + feature.get('Image') + '" height="200" width="200">'
                      + '<br><a href="' + feature.get('website') + '" target="_blank">Click Here for more info</a>';
     } else if(feature.get('type') == 'CountryData'){
-      displaycontent = '<b>LDS Population:</b> ' + feature.get('LDSpop') 
+      displaycontent = '<b>LDS Population:</b> ' + feature.get('Population') 
                      + '<br><b>Missions:</b> ' + feature.get('Missions') 
                      + '<br><b>Congregations: </b> ' + feature.get('Congregations') 
                      + '<br><b>Temples: </b> ' + feature.get('Operating_Temples')
